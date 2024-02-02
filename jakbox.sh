@@ -1,5 +1,5 @@
 #!/bin/bash
-# JakBox takes the best parts from 4 diffrent proot, chroot setup githubs
+# JakBox uses some of the best parts from 4 diffrent proot, chroot setup githubs
 # https://github.com/olegos2/mobox
 # https://github.com/Ilya114/Box64Droid/
 # https://github.com/cheadrian/termux-chroot-proot-wine-box86_64/
