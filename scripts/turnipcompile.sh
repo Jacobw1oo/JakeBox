@@ -38,11 +38,11 @@ DATE=$(date +"%F" | sed 's/-//g')
 MESA_64=${BUILD_PREFIX}/mesa-vulkan-kgsl_${MESA_VER}-${DATE}_arm64
 MESA_32=${BUILD_PREFIX}/mesa-vulkan-kgsl_${MESA_VER}-${DATE}_arm32
 
-#applying patch
-cd ${MESA_PREFIX}/src/
-wget https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/packages/dri.zip
-unzip ${MESA_PREFIX}/src/dri.zip
-git apply -v wsi-termux-x11-v3.patch
+#applying patch (disabled, dont think it is needed with mesa 24+, patch broke it)
+#cd ${MESA_PREFIX}/src/
+#wget https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/packages/dri.zip
+#unzip ${MESA_PREFIX}/src/dri.zip
+#git apply -v wsi-termux-x11-v3.patch
 
 #Building arm64 binary
 # all arm64 requirments
