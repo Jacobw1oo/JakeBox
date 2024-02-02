@@ -53,7 +53,7 @@ pkg install xfce -Y
 
 #Part Pre 3 - Termux - Loading into proot
 #loads into proot and continues the script at jakeboxproot
-proot-distro login debian --user root --shared-tmp --no-sysvipc -- bash -c "curl -s -o ~/jakeboxproot.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/jakeboxproot.sh; bash .jakeboxproot.sh"
+proot-distro login debian --user root --shared-tmp --no-sysvipc -- bash -c "curl -s -o ~/jakeboxproot.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/jakeboxproot.sh; bash jakeboxproot.sh"
 
 echo "Part 3 prep - Done"
 #Username: gamer Password: gamer
