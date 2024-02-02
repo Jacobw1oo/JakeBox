@@ -111,7 +111,6 @@ sudo meson build32/ --cross-file arm32.txt --prefix /usr --libdir lib/aarch64-li
 sudo meson compile -C build32/
 sudo meson install -C build32/ --destdir ${MESA_32}
 
-
 #building arm32 deb
 cd ${BUILD_PREFIX}
 
