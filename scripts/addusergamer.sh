@@ -1,7 +1,6 @@
 #!/bin/bash
 #Part 4 - Debian - Adding User
 #addusergamer.sh
-
 #Username: gamer Password: gamer
 set -e
 
