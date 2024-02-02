@@ -126,3 +126,9 @@ dpkg-deb --build --root-owner-group ${MESA_32}
 #puting pkg-config back
 sudo apt remove pkg-config
 sudo apt install pkg-config:arm64
+
+#Testing turnip 
+#TU_DEBUG=noconform MESA_VK_WSI_DEBUG=sw vkcube 
+
+#Testing zink 
+#MESA_LOADER_DRIVER_OVERRIDE=zink TU_DEBUG=noconform MESA_VK_WSI_DEBUG=sw glxgears
