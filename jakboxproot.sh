@@ -5,10 +5,13 @@
 # https://github.com/cheadrian/termux-chroot-proot-wine-box86_64/
 # https://github.com/Raezroth/Linux-ARM-Gaming-Chroot
 
-
+#Part Pre 3 - Debian - Creating scripts directory
+mkdir /usr/local/bin/jakbox/
+mkdir /usr/local/bin/jakbox/scripts
+export JAKSCRIPTS="/usr/local/bin/jakbox/scripts"
 
 #Part 3 - Debian - Installing xfce4
-bash scripts/xfce4.sh
+bash $JAKSCRIPTS/xfce4.sh
 
 #Part 4 - Debian - Adding User
 #Username: gamer Password: gamer
