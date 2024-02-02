@@ -1,4 +1,5 @@
 #!/bin/bash
+#Part 5 - Debian User - Installing lots of packages
 set -e
 
 # Install related kits
