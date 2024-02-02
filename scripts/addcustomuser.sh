@@ -1,4 +1,6 @@
 #!/bin/bash
+
+#addcustomuser.sh
 # direct copy of cheadrian - Addons_Proot_Add_user.sh
 # https://github.com/cheadrian/termux-chroot-proot-wine-box86_64/blob/main/Scripts/Addons_Proot_Add_user.sh
 
