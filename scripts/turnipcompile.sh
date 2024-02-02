@@ -50,6 +50,7 @@ sudo apt install zlib1g-dev:arm64 libexpat1-dev:arm64 libdrm-dev:arm64 libx11-de
 cd ${MESA_PREFIX}
 mkdir build64
 
+# file to handle host build config, we have two due to cross compile for arm86 (armhf)
 echo "[binaries]
 c = 'arm-linux-gnueabihf-gcc'
 cpp = 'arm-linux-gnueabihf-g++'
@@ -63,6 +64,11 @@ cpu_family = 'arm'
 cpu = 'aarch64'
 endian = 'little'
 " > ${MESA_PREFIX}/arm64.txt
+
+sudo meson build64/ --prefix /usr --libdir lib/aarch64-linux-gnu/ -D platforms=x11,wayland -D gallium-drivers=freedreno -D vulkan-drivers=freedreno -D freedreno-kmds=msm,kgsl -D dri3=enabled -D buildtype=release -D glx=disabled -D egl=disabled -D gles1=disabled -D gles2=disabled -D gallium-xa=disabled -D opengl=false -D shared-glapi=false -D b_lto=true -D b_ndebug=true -D cpp_rtti=false -D gbm=disabled -D llvm=disabled -D shared-llvm=disabled -D xmlconfig=disabled
+sudo meson compile -C build64/
+sudo meson install -C build64/ --destdir ${MESA_64}
+
 
 #Building arm86 binary
 # all armhf requirments
