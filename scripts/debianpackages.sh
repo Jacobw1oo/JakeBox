@@ -1,5 +1,5 @@
 #!/bin/bash
-#Part 5 - Debian User - Installing lots of packages
+#Part Pre 5 - Debian User - Installing lots of packages
 #debianpackages.sh
 set -e
 
