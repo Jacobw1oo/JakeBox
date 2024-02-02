@@ -7,5 +7,8 @@ wget https://ryanfortner.github.io/box64-debs/box64.list -O /etc/apt/sources.lis
 sudo apt update
 sudo apt install box86-android box64-android
 
+#Grabing box86 and 64 github due to not having binfmt, we use box86/64 bash
+git clone https://github.com/ptitSeb/box86 /home/gamer/
+
 export BOX86_BASH=~/box86/tests/bash
 export BOX64_BASH=~/box64/tests/bash
