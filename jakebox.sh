@@ -11,7 +11,8 @@
 echo "allow-external-apps = true" >> ~/.termux/termux.properties && echo "hide-soft-keyboard-on-startup = true" >> ~/.termux/termux.properties
 pkg clean && termux-setup-storage && yes | pkg update && pkg install nano wget proot-distro pulseaudio -y && pkg clean && proot-distro install debian && proot-distro clear-cache &&
 echo 'pulseaudio --verbose --start --exit-idle-time=-1 --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1"
-alias jakboxsys="proot-distro login debian --user gamer --shared-tmp --no-sysvipc"' >> ~/.bashrc alias jakbox="proot-distro login debian --user gamer --shared-tmp "' >> ~/.bashrc && . ~/.bashrc && termux-reload-settings
+alias jakeboxsys="proot-distro login debian --user gamer --shared-tmp --no-sysvipc"' >> ~/.bashrc 
+alias jakebox="proot-distro login debian --user gamer --shared-tmp "' >> ~/.bashrc && . ~/.bashrc && termux-reload-settings
 
 #Todo make a pick menu
 
