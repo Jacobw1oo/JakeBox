@@ -1,5 +1,6 @@
 #!/bin/bash
 #Part 3 - Debian - Installing xfce4
+#xfce4.sh
 
 set -e
 echo "Installing xfce4 with Termux:X11 Support"
