@@ -11,8 +11,10 @@ mkdir /usr/local/bin/jakbox/scripts
 export JAKSCRIPTS="/usr/local/bin/jakbox/scripts"
 
 #Part 3 - Debian - Installing xfce4
+curl -s -o $JAKSCRIPTS/xfce4.sh https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/scripts/xfce4.sh
 bash $JAKSCRIPTS/xfce4.sh
 
 #Part 4 - Debian - Adding User
 #Username: gamer Password: gamer
-bash scripts/addusergamer.sh
+curl -s -o $JAKSCRIPTS/addusergamer.sh https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/scripts/addusergamer.sh
+bash $JAKSCRIPTS/addusergamer.sh
