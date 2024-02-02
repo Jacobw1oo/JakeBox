@@ -6,7 +6,6 @@ Installation instructions
 1. Install
 [Termux](https://f-droid.org/repo/com.termux_118.apk),
 [Termux-X11](https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/components/termux-x11.apk) and
-[Input Bridge](https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/components/inputbridge.apk).
 
 2. Open termux and paste command
 
