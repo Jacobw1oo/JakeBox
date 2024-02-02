@@ -1,5 +1,5 @@
 #!/bin/bash
-# JakBox uses some of the best parts from 4 diffrent proot, chroot setup githubs
+# JakeBox uses some of the best parts from 4 diffrent proot, chroot setup githubs
 # https://github.com/olegos2/mobox
 # https://github.com/Ilya114/Box64Droid/
 # https://github.com/cheadrian/termux-chroot-proot-wine-box86_64/
@@ -39,8 +39,8 @@ pkg install termux-x11-nightly -Y
 pkg install xfce -Y
 
 #Part Pre 3 - Termux - Loading into proot
-#loads into proot and continues the script at jakboxproot
-proot-distro login debian --user root --shared-tmp --no-sysvipc -- bash -c "curl -s -o ~/jakboxproot.sh https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/jakboxproot.sh; bash .jakboxproot.sh"
+#loads into proot and continues the script at jakeboxproot
+proot-distro login debian --user root --shared-tmp --no-sysvipc -- bash -c "curl -s -o ~/jakeboxproot.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/jakeboxproot.sh; bash .jakeboxproot.sh"
 
 #Username: gamer Password: gamer
 
