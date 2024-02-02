@@ -37,9 +37,9 @@ MESA_64=${BUILD_PREFIX}/mesa-vulkan-kgsl_${MESA_VER}-${DATE}_arm64
 MESA_86=${BUILD_PREFIX}/mesa-vulkan-kgsl_${MESA_VER}-${DATE}_arm86
 
 #applying patch
-cd ${MESA_PREFIX}
-wget ~/Downloads/dri.zip https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/dri.zip
-unzip ~/Downloads/dri.zip
+cd ${MESA_PREFIX}/src/
+wget https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/dri.zip
+unzip ${MESA_PREFIX}/src//dri.zip
 git apply -v wsi-termux-x11-v3.patch
 
 #Building arm64 binary
