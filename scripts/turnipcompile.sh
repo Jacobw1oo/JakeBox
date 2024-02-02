@@ -91,7 +91,9 @@ cpu = 'armhf'
 endian = 'little'
 " > ${MESA_PREFIX}/arm86.txt
 
-
+sudo meson build86/ --prefix /usr --libdir lib/aarch64-linux-gnu/ -D platforms=x11,wayland -D gallium-drivers=freedreno -D vulkan-drivers=freedreno -D freedreno-kmds=msm,kgsl -D dri3=enabled -D buildtype=release -D glx=disabled -D egl=disabled -D gles1=disabled -D gles2=disabled -D gallium-xa=disabled -D opengl=false -D shared-glapi=false -D b_lto=true -D b_ndebug=true -D cpp_rtti=false -D gbm=disabled -D llvm=disabled -D shared-llvm=disabled -D xmlconfig=disabled
+sudo meson compile -C build86/
+sudo meson install -C build86/ --destdir ${MESA_86}
 
 
 
