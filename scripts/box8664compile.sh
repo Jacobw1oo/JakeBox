@@ -6,12 +6,12 @@ set -e
 sudo apt install gcc-arm-linux-gnueabihf make cmake git wget
 
 # Box86 clone, compile, and install (-DRK3399=1 is for most AArch64)
-git clone https://github.com/ptitSeb/box86 /home/gamer/Downloads
-cd ~/Downloads/box86; mkdir build; cd build; cmake ../ -DRK3399=1; make -j$(nproc); sudo make install
+git clone https://github.com/ptitSeb/box86 /home/gamer/
+cd ~/box86; mkdir build; cd build; cmake ../ -DRK3399=1; make -j$(nproc); sudo make install
 
 # Box64 clone, compile, and install (-DRK3399=1 is for most AArch64)
-git clone https://github.com/ptitSeb/box64 /home/gamer/Downloads
-cd ~/Downloads/box64; mkdir build; cd build; cmake ../ -DRK3399=1; make -j$(nproc); sudo make install
+git clone https://github.com/ptitSeb/box64 /home/gamer/
+cd ~/box64; mkdir build; cd build; cmake ../ -DRK3399=1; make -j$(nproc); sudo make install
 
 cd ~/
 
