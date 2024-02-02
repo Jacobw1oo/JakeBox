@@ -1,20 +1,20 @@
 # JakBox
 Repo for quickly setuping up Proot with Termux, and install GPU acceleration, Box64/86, Wine, Steam, Heroic, Lutris, PlayonLinux. 
 
+Installation instructions
 
 1. Install
 [Termux](https://f-droid.org/repo/com.termux_118.apk),
 [Termux-X11](https://raw.githubusercontent.com/olegos2/mobox/main/components/termux-x11.apk) and
 [Input Bridge](https://raw.githubusercontent.com/olegos2/mobox/main/components/inputbridge.apk).
 
-Installation instructions
+2. Open termux and paste command
 
-    Install Termux and Termux-x11.
-    In Termux run the Box64Droid install command: curl -o install https://raw.githubusercontent.com/Ilya114/Box64Droid/main/scripts/install && chmod +x install && ./install
+```bash
+curl -s -o ~/x https://raw.githubusercontent.com/olegos2/mobox/main/install && . ~/x
+```
 
-After the installation is completed, run box64droid --start. The starting script will start Termux-X11 and show the start menu.
-
-You also can use Input Bridge, install 0.1.9 apk then just run app in Android and in Wine from start menu.
+3. Type `mobox` in termux.
 
 #
 Big thanks to Hugo, JeezDisReez, ptitSeb, MishkaKolos, Xanzo, Jotaros, Maxython and others for help.
