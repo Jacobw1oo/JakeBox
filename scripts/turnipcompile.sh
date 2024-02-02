@@ -38,7 +38,7 @@ MESA_86=${BUILD_PREFIX}/mesa-vulkan-kgsl_${MESA_VER}-${DATE}_arm86
 
 #applying patch
 cd ${MESA_PREFIX}
-curl -s -o ~/Downloads/dri.zip https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/dri.zip
+wget ~/Downloads/dri.zip https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/dri.zip
 unzip ~/Downloads/dri.zip
 git apply -v wsi-termux-x11-v3.patch
 
