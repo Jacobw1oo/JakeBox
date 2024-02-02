@@ -69,6 +69,17 @@ sudo meson build64/ --prefix /usr --libdir lib/aarch64-linux-gnu/ -D platforms=x
 sudo meson compile -C build64/
 sudo meson install -C build64/ --destdir ${MESA_64}
 
+#building arm64 deb
+cd ${BUILD_PREFIX}
+
+sudo apt remove -y mesa-vulkan-drivers:arm64
+sudo apt download mesa-vulkan-drivers:arm64
+sudo dpkg-deb -e mesa-vulkan-drivers_*_arm64.deb ${MESA_64}/DEBIAN/
+sudo sed -ie "3s/.*/Version: ${MESA_VER}-${DATE}/g" ${MESA_64}/DEBIAN/control
+sudo rm mesa-vulkan-drivers_*_arm64.deb
+sudo rm ${MESA_64}/DEBIAN/md5sums ${MESA_64}/DEBIAN/triggers
+sudo rm -rf ${MESA_64}/usr/share/drirc.d
+sudo dpkg-deb --build --root-owner-group ${MESA_64}
 
 #Building arm86 binary
 # all armhf requirments
@@ -95,6 +106,18 @@ sudo meson build86/ --prefix /usr --libdir lib/aarch64-linux-gnu/ -D platforms=x
 sudo meson compile -C build86/
 sudo meson install -C build86/ --destdir ${MESA_86}
 
+
+#building arm86 deb
+cd ${BUILD_PREFIX}
+
+sudo apt remove -y mesa-vulkan-drivers:armhf
+sudo apt download mesa-vulkan-drivers:armhf
+sudo dpkg-deb -e mesa-vulkan-drivers_*_armhf.deb ${MESA_86}/DEBIAN/
+sudo sed -ie "3s/.*/Version: ${MESA_VER}-${DATE}/g" ${MESA_86}/DEBIAN/control
+sudo rm mesa-vulkan-drivers_*_armhf.deb
+sudo rm ${MESA_86}/DEBIAN/md5sums ${MESA_86}/DEBIAN/triggers
+sudo rm -rf ${MESA_86}/usr/share/drirc.d
+sudo dpkg-deb --build --root-owner-group ${MESA_86}
 
 
 
