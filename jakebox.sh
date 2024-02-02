@@ -26,6 +26,11 @@ echo "alias jakeboxsys="proot-distro login debian --user gamer --shared-tmp --no
 "" >> ~/.bashrc 
 echo "alias jakebox="proot-distro login debian --user gamer --shared-tmp -- bash -c "termux-x11 :0 -xstartup "dbus-launch --exit-with-session xfce4-session"" >> ~/.bashrc 
 
+echo "[binaries]
+c = 'arm-linux-gnueabihf-gcc'
+" > ${MESA_PREFIX}/arm64.txt
+
+
 # read bashrc to terminal and reloads settings
 cat ~/.bashrc && termux-reload-settings
 echo "Part 1 - Done"
