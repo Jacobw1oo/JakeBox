@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#Part 4 - Debian - Adding Custom User (Disabled)
 #addcustomuser.sh
 # direct copy of cheadrian - Addons_Proot_Add_user.sh
 # https://github.com/cheadrian/termux-chroot-proot-wine-box86_64/blob/main/Scripts/Addons_Proot_Add_user.sh
@@ -24,7 +24,6 @@ echo -e "${GREEN}Create the box user, add to sudo.${WHITE}"
 groupadd storage
 groupadd wheel
 groupadd video
-groupadd storage
 useradd -U -m -G wheel,audio,video,storage -s /bin/bash box -p box
 
 echo -e "${GREEN}Install 'sudo' and add box to sudoers.${WHITE}"
