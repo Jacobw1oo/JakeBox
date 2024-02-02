@@ -5,6 +5,8 @@
 # https://github.com/cheadrian/termux-chroot-proot-wine-box86_64/
 # https://github.com/Raezroth/Linux-ARM-Gaming-Chroot
 
+#TODO MENU all menus should be at the top#
+
 #Part Pre 3 - Debian - Creating scripts directory
 mkdir /usr/local/bin/jakbox/
 mkdir /usr/local/bin/jakbox/scripts
