@@ -30,8 +30,8 @@ curl -s -o $JAKESCRIPTS/box8664apt.sh https://raw.githubusercontent.com/Jacobw1o
 bash $JAKESCRIPTS/box8664apt.sh
 
 #Part 5 - Debian User - Installing turnip v4 GPU drivers
-curl -s -o $JAKESCRIPTS/turnipv4.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/turnipv4.sh
-bash $JAKESCRIPTS/turnipv4.sh
+curl -s -o $JAKESCRIPTS/turnipmesa24-1.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/turnipmesa24-1.sh
+bash $JAKESCRIPTS/turnipmesa24-1.sh
 
 #Part 6 - Debian User - box86&box64 
 #TODO MENU all menus should be at the top#
