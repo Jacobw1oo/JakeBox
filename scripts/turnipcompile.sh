@@ -19,7 +19,7 @@ sudo echo "deb-src [signed-by="/usr/share/keyrings/debian-archive-keyring.gpg"] 
 sudo echo "deb-src [signed-by="/usr/share/keyrings/debian-archive-keyring.gpg"] http://deb.debian.org/debian bookworm-updates main contrib" >> /etc/apt/sources.list
 sudo apt update
 sudo apt-get build-dep mesa
-sudo apt install wget
+sudo apt install wget unzip
 sudo apt install make cmake git wget vulkan-tools mesa-utils g++-arm-linux-gnueabihf g++-aarch64-linux-gnu
 cp /usr/include/libdrm/drm.h /usr/include/libdrm/drm_mode.h /usr/include/
 
