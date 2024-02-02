@@ -19,4 +19,7 @@ cd ~/box64; mkdir build; cd build; cmake ../ -DSD888=1 -DCMAKE_BUILD_TYPE=RelWit
 
 cd ~/
 
+# use to fix not having binfmt
+"export BOX86_BASH=~/box86/tests/bash" >> ~/.bashrc
+"export BOX64_BASH=~/box64/tests/bash" >> ~/.bashrc
 
