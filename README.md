@@ -5,15 +5,15 @@ Installation instructions
 
 1. Install
 [Termux](https://f-droid.org/repo/com.termux_118.apk),
-[Termux-X11](https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/components/termux-x11.apk) and
+[Termux-X11](https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/components/termux-x11.apk) and
 
 2. Open termux and paste command
 
 ```bash
-curl -s -o ~/jakbox.sh https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/jakbox.sh && . ~/jakbox.sh
+curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/jakebox.sh && . ~/jakebox.sh
 ```
 
-3. Type `jakbox` in termux or `jakboxsys` if you need "--no-sysvipc".
+3. Type `jakebox` in termux or `jakeboxsys` if you need "--no-sysvipc".
 
 #
 Massive Thanks to [ptitSeb](https://github.com/ptitSeb/box86), without box86 & box64 non of this would be possible.
