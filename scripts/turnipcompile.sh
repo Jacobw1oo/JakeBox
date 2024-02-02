@@ -5,7 +5,9 @@
 #some fun file links
 #https://gitlab.freedesktop.org/mesa/mesa
 #https://gitlab.freedesktop.org/Danil/mesa/-/archive/turnip/feature/a7xx-basic-support/mesa-turnip-feature-a7xx-basic-support.tar.gz
-#https://gitlab.freedesktop.org/Danil/mesa/-/tree/feature/turnip/a750
+
+#If i had to build mesa for the a750
+#git clone https://gitlab.freedesktop.org/Danil/mesa/-/tree/feature/turnip/a750 /home/gamer/mesa-a750
 
 set -e
 
@@ -122,10 +124,6 @@ sudo rm ${MESA_32}/DEBIAN/md5sums ${MESA_32}/DEBIAN/triggers
 sudo rm -rf ${MESA_32}/usr/share/drirc.d
 sudo dpkg-deb --build --root-owner-group ${MESA_32}
 
-
+#puting pkg-config back
 sudo apt remove pkg-config
 sudo apt install pkg-config:arm64
-
-
-#If i had to build mesa for the a750
-#git clone https://gitlab.freedesktop.org/Danil/mesa/-/tree/feature/turnip/a750 /home/gamer
