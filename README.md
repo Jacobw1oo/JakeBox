@@ -11,7 +11,7 @@ Installation instructions
 2. Open termux and paste command
 
 ```bash
-curl -s -o ~/jakbox.sh https://raw.githubusercontent.com/olegos2/mobox/main/install && . ~/jakbox.sh
+curl -s -o ~/jakbox.sh https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/jakbox.sh && . ~/jakbox.sh
 ```
 
 3. Type `mobox` in termux.
