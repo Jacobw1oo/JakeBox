@@ -9,6 +9,11 @@
 
 set -e
 
+#Making sure architecture is correct
+sudo dpkg --add-architecture armhf
+sudo apt update
+sudo apt upgrade -y
+
 #getting build-dependencies for Mesa source package
 sudo echo "deb-src [signed-by="/usr/share/keyrings/debian-archive-keyring.gpg"] http://deb.debian.org/debian bookworm main contrib" >> /etc/apt/sources.list
 sudo echo "deb-src [signed-by="/usr/share/keyrings/debian-archive-keyring.gpg"] http://deb.debian.org/debian bookworm-updates main contrib" >> /etc/apt/sources.list
@@ -21,6 +26,7 @@ sudo apt install zlib1g-dev:arm64 libexpat1-dev:arm64 libdrm-dev:arm64 libx11-de
 
 # main mesa repo
 git clone https://gitlab.freedesktop.org/mesa/mesa /home/gamer/Downloads
+cd /home/gamer/Downloads/
 
 echo "[binaries]
 c = 'arm-linux-gnueabihf-gcc'
