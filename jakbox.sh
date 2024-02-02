@@ -31,7 +31,7 @@ source ~/.bashrc
 
 #Part Pre 3 - Termux - Loading into proot
 #loads into proot and continues the script at jakboxproot
-proot-distro login debian --user root --shared-tmp --no-sysvipc
+proot-distro login debian --user root --shared-tmp --no-sysvipc -- bash -c "curl -s -o ~/jakboxproot.sh https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/jakboxproot.sh; bash .jakboxproot.sh"
 
 #Username: gamer Password: gamer
 
