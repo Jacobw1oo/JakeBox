@@ -24,15 +24,21 @@ su gamer
 # should add id checks here, making sure user is not root user
 
 #Part 5 - Debian User - Installing lots of packages
-curl -s -o $JAKSCRIPTS/debianpackages.sh https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/scripts/debianpackages.sh
-bash $JAKSCRIPTS/debianpackages.sh
+curl -s -o $JAKSCRIPTS/box8664apt.sh https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/scripts/box8664apt.sh
+bash $JAKSCRIPTS/box8664apt.sh
 
 #Part 6 - Debian User - box86&box64 
-#Part 5 - Debian User - Installing box86-box64 from debian repo
-curl -s -o $JAKSCRIPTS/debianpackages.sh https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/scripts/debianpackages.sh
-bash $JAKSCRIPTS/debianpackages.sh
-curl -s -o $JAKSCRIPTS/debianpackages.sh https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/scripts/debianpackages.sh
-bash $JAKSCRIPTS/debianpackages.sh
+
+#TODO MENU all menus should be at the top#
+
+#Part 6 - Debian User - Installing box86-box64 from debian repo
+#curl -s -o $JAKSCRIPTS/debianpackages.sh https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/scripts/debianpackages.sh
+#bash $JAKSCRIPTS/debianpackages.sh
+
+#Part 6 - Debian User - Compiling and Installing box86-box64
+#curl -s -o $JAKSCRIPTS/box8664compile.sh https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/scripts/box8664compile.sh
+#bash $JAKSCRIPTS/box8664compile.sh
+
 #Part 6 - Debian User - Compiling and Installing box86-box64 for snapdragon
 curl -s -o $JAKSCRIPTS/box8664snapdragon.sh https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/scripts/box8664snapdragon.sh
 bash $JAKSCRIPTS/box8664snapdragon.sh
