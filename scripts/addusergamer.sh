@@ -8,7 +8,6 @@ set -e
 groupadd storage
 groupadd wheel
 groupadd video
-groupadd audio
 
 # Adding user
 useradd -U -m -G wheel,audio,video,storage -s /bin/bash gamer -p gamer
