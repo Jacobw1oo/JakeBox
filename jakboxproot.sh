@@ -23,9 +23,11 @@ bash $JAKSCRIPTS/addusergamer.sh
 su gamer
 # should add id checks here, making sure user is not root user
 
-#Part 5 - Debian User - Installing lots of packages
+#Part 5 Pre - Debian User - Installing lots of packages
 curl -s -o $JAKSCRIPTS/box8664apt.sh https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/scripts/box8664apt.sh
 bash $JAKSCRIPTS/box8664apt.sh
+
+#Part 5 - Debian User - Installing turnip v4 GPU drivers
 
 #Part 6 - Debian User - box86&box64 
 
