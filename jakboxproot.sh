@@ -22,3 +22,7 @@ bash $JAKSCRIPTS/addusergamer.sh
 #Part 5 Pre - Debian user - logining to user
 su gamer
 # should add id checks here, making sure user is not root user
+
+#Part 5 - Debian User - Installing lots of packages
+curl -s -o $JAKSCRIPTS/debianpackages.sh https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/scripts/debianpackages.sh
+bash $JAKSCRIPTS/debianpackages.sh
