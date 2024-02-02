@@ -45,7 +45,6 @@ git apply -v wsi-termux-x11-v3.patch
 #Building arm64 binary
 # all arm64 requirments
 sudo apt install zlib1g-dev:arm64 libexpat1-dev:arm64 libdrm-dev:arm64 libx11-dev:arm64 libx11-xcb-dev:arm64 libxext-dev:arm64 libxdamage-dev:arm64 libxcb-glx0-dev:arm64 libxcb-dri2-0-dev:arm64 libxcb-dri3-dev:arm64 libxcb-shm0-dev:arm64 libxcb-present-dev:arm64 libxshmfence-dev:arm64 libxxf32vm-dev:arm64 libxrandr-dev:arm64 libwayland-dev:arm64 wayland-protocols:arm64 libwayland-egl-backend-dev:arm64 -Y
-#apt-utils might be needed?
 
 cd ${MESA_PREFIX}
 mkdir build64
@@ -85,6 +84,7 @@ sudo dpkg-deb --build --root-owner-group ${MESA_64}
 # all armhf requirments
 sudo apt install zlib1g-dev:armhf libexpat1-dev:armhf libdrm-dev:armhf libx11-dev:armhf libx11-xcb-dev:armhf libxext-dev:armhf libxdamage-dev:armhf libxcb-glx0-dev:armhf libxcb-dri2-0-dev:armhf libxcb-dri3-dev:armhf libxcb-shm0-dev:armhf libxcb-present-dev:armhf libxshmfence-dev:armhf libxrandr-dev:armhf libwayland-dev:armhf wayland-protocols:armhf libwayland-egl-backend-dev:armhf -Y
 
+# sudo apt install arm-linux-gnueabihf-pkg-config libbsd-dev apt-utils
 cd ${MESA_PREFIX}
 mkdir build32
 
