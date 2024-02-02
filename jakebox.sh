@@ -8,7 +8,7 @@
 #Todo make a pick menu
 
 
-echo "Installing JakeBox "
+echo "Installing JakeBox"
 echo "Estimated time to completion is 20 minuties"
 echo "-------------------------------------------"
 
