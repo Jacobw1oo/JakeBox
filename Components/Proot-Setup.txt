@@ -1,0 +1,144 @@
+#!/bin/bash
+# JakBox takes the best parts from 4 diffrent proot, chroot setup githubs
+# https://github.com/olegos2/mobox
+# https://github.com/Ilya114/Box64Droid/
+# https://github.com/cheadrian/termux-chroot-proot-wine-box86_64/
+# https://github.com/Raezroth/Linux-ARM-Gaming-Chroot
+
+#Part 1 - Termux - Installing proot-debian
+echo "allow-external-apps = true" >> ~/.termux/termux.properties && echo "hide-soft-keyboard-on-startup = true" >> ~/.termux/termux.properties
+pkg clean && termux-setup-storage && yes | pkg update && pkg install nano wget proot-distro pulseaudio -y && pkg clean && proot-distro install debian && proot-distro clear-cache &&
+echo 'pulseaudio --verbose --start --exit-idle-time=-1 --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1"
+alias jakboxsys="proot-distro login debian --user gamer --shared-tmp --no-sysvipc"' >> ~/.bashrc alias jakbox="proot-distro login debian --user gamer --shared-tmp "' >> ~/.bashrc && . ~/.bashrc && termux-reload-settings
+
+#Part 2 - Termux - Installing VirGL Zink
+pkg install x11-repo tur-repo
+pkg install mesa-zink virglrenderer-mesa-zink
+
+echo 'alias zink="MESA_NO_ERROR=1 MESA_GL_VERSION_OVERRIDE=4.3COMPAT MESA_GLES_VERSION_OVERRIDE=3.2 GALLIUM_DRIVER=zink ZINK_DESCRIPTORS=lazy virgl_test_server --use-egl-surfaceless --use-gles &"' >> ~/.bashrc
+source ~/.bashrc
+
+#Part 2.1 - Termux - Installing VirGL ES
+pkg install x11-repo
+pkg install virglrenderer-android
+
+echo 'alias gl="MESA_NO_ERROR=1 MESA_GL_VERSION_OVERRIDE=4.3COMPAT MESA_GLES_VERSION_OVERRIDE=3.2 virgl_test_server_android &"' >> ~/.bashrc
+source ~/.bashrc
+
+#Part 3 - Debian - Installing xfce4
+bash xfce4.sh
+
+#!/bin/bash
+set -e
+echo "Installing xfce4 with Termux:X11 Support"
+
+apt update && apt upgrade -y
+apt install -y sudo nano wget tzdata dbus-x11 adwaita-icon-theme-full gnome-themes-extra
+apt install -y xfce4 xfce4-terminal xfce4-goodies --no-install-recommends --no-install-suggests
+apt clean && apt autoremove -y
+
+echo 'taskset -c 4-7 termux-x11 :1 -xstartup startxfce4 2> /dev/null &' > /usr/local/bin/x11
+
+chmod +x /usr/local/bin/x11
+
+#Part 4 - Debian - Adding User
+
+#!/bin/bash
+#Username: gamer Password: gamer
+set -e
+
+# Not sure what these do
+groupadd storage
+groupadd wheel
+groupadd video
+groupadd storage
+
+# Adding user
+useradd -U -m -G wheel,audio,video,storage -s /bin/bash gamer -p gamer
+
+# Making sure sudo is installed
+apt install -y sudo
+# Adding them to admin sudoers file
+echo "box  ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+
+# Update alias command to with user
+alias jakbox="proot-distro login debian --user gamer --shared-tmp --no-sysvipc"' >> ~/.bashrc
+# Update alias command to with user and for steam
+alias jakboxsteam="proot-distro login debian --user gamer --shared-tmp "' >> ~/.bashrc
+
+
+#Part 5 - Debian User - Compiling and Installing box86-box64
+bash box8664compiled.sh
+
+#!/bin/bash
+set -e
+
+sudo apt install gcc-arm-linux-gnueabihf make cmake git wget
+
+# Box86 clone, compile, and install (-DRK3399=1 is for most AArch64)
+git clone https://github.com/ptitSeb/box86 /home/gamer/Downloads
+cd ~/Downloads/box86; mkdir build; cd build; cmake ../ -DRK3399=1; make -j$(nproc); sudo make install
+
+# Box64 clone, compile, and install
+git clone https://github.com/ptitSeb/box64 /home/gamer/Downloads
+cd ~/Downloads/box64; mkdir build; cd build; cmake ../ -DRK3399=1; make -j$(nproc); sudo make install
+
+cd ~/
+
+#Part 5 - Debian User - Compiling and Installing box86-box64 for snapdragon
+
+bash box8664snapdragon.sh
+
+#!/bin/bash
+#this script is for Snapdragon devices
+# https://github.com/ptitSeb/box86/blob/master/docs/COMPILE.md
+set -e
+
+#Installing build requiremnts
+sudo apt install gcc-arm-linux-gnueabihf make cmake git wget -y
+
+# Box86 clone, compile, and install (-DSD888=1 is for latest Snapdragon processor alt: -DSD845=1)
+git clone https://github.com/ptitSeb/box86 /home/gamer/Downloads/
+cd ~/Downloads/box86; mkdir build; cd build; cmake ../ -DSD888=1 -DCMAKE_BUILD_TYPE=RelWithDebInfo; make -j$(nproc); sudo make install
+
+# Box64 clone, compile, and install (-DSD888=1 is for latest Snapdragon processor alt: -DSD845=1)
+git clone https://github.com/ptitSeb/box64 /home/gamer/Downloads/
+cd ~/Downloads/box64; mkdir build; cd build; cmake ../ -DSD888=1 -DCMAKE_BUILD_TYPE=RelWithDebInfo; make -j$(nproc); sudo make install
+
+cd ~/
+
+#Part 5 - Debian User - Installing box86-box64
+bash box8664apt.sh
+
+#!/bin/bash
+set -e
+
+sudo wget https://itai-nelken.github.io/weekly-box86-debs/debian/box86.list -O /etc/apt/sources.list.d/box86.list
+wget -qO- https://itai-nelken.github.io/weekly-box86-debs/debian/KEY.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/box86-debs-archive-keyring.gpg
+sudo apt update && sudo apt install box86 -y
+
+sudo wget https://ryanfortner.github.io/box64-debs/box64.list -O /etc/apt/sources.list.d/box64.list
+wget -qO- https://ryanfortner.github.io/box64-debs/KEY.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/box64-debs-archive-keyring.gpg
+sudo apt update && sudo apt install box64-arm64 -y
+
+cd ~/
+
+#Part 6 - Debian User - Install the frist Wine
+#!/bin/bash
+#https://github.com/Kron4ek/Wine-Builds/releases/
+set -e
+
+WINE_AMD64=https://github.com/Kron4ek/Wine-Builds/releases/download/8.0.2/wine-8.0.2-amd64.tar.xz
+WINE_DIR=~/wine
+
+# Install related kits
+sudo dpkg --add-architecture armhf
+sudo apt update
+sudo apt upgrade -y
+sudo apt install -y gpg xz-utils # software-properties-common
+
+# - These packages are needed for running box86/wine-i386 box64/wine-amd64
+sudo apt install -y libgl1:armhf libasound2:armhf libc6:armhf libglib2.0-0:armhf libgphoto2-6:armhf libgphoto2-port12:armhf libgstreamer-plugins-base1.0-0:armhf libgstreamer1.0-0:armhf libpcap0.8:armhf libpulse0:armhf libsane1:armhf libudev1:armhf libunwind8:armhf libusb-1.0-0:armhf libx11-6:armhf libxext6:armhf ocl-icd-libopencl1:armhf libopencl1:armhf ocl-icd-libopencl1:armhf libopencl-1.2-1:armhf libasound2-plugins:armhf libncurses6:armhf libcapi20-3:armhf libcups2:armhf libdbus-1-3:armhf libfontconfig1:armhf libfreetype6:armhf libglu1-mesa:armhf libglu1:armhf libgnutls30:armhf libgsm1:armhf libgssapi-krb5-2:armhf libjpeg8:armhf libkrb5-3:armhf libodbc1:armhf libosmesa6:armhf libpng16-16:armhf libsdl2-2.0-0:armhf libtiff5:armhf libv4l-0:armhf libxcomposite1:armhf libxcursor1:armhf libxfixes3:armhf libxi6:armhf libxinerama1:armhf libxrandr2:armhf libxrender1:armhf libxslt1.1:armhf libxxf86vm1:armhf
+
+sudo apt install -y libgl1:arm64 libasound2:arm64 libc6:arm64 libglib2.0-0:arm64 libgphoto2-6:arm64 libgphoto2-port12:arm64 libgstreamer-plugins-base1.0-0:arm64 libgstreamer1.0-0:arm64 libpcap0.8:arm64 libpulse0:arm64 libsane1:arm64 libudev1:arm64 libunwind8:arm64 libusb-1.0-0:arm64 libx11-6:arm64 libxext6:arm64 ocl-icd-libopencl1:arm64 libopencl1:arm64 ocl-icd-libopencl1:arm64 libopencl-1.2-1:arm64 libasound2-plugins:arm64 libncurses6:arm64 libcapi20-3:arm64 libcups2:arm64 libdbus-1-3:arm64 libfontconfig1:arm64 libfreetype6:arm64 libglu1-mesa:arm64 libglu1:arm64 libgnutls30:arm64 libgsm1:arm64 libgssapi-krb5-2:arm64 libjpeg8:arm64 libkrb5-3:arm64 libodbc1:arm64 libosmesa6:arm64 libpng16-16:arm64 libsdl2-2.0-0:arm64 libtiff5:arm64 libv4l-0:arm64 libxcomposite1:arm64 libxcursor1:arm64 libxfixes3:arm64 libxi6:arm64 libxinerama1:arm64 libxrandr2:arm64 libxrender1:arm64 libxslt1.1:arm64 libxxf86vm1:arm64
+
