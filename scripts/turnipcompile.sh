@@ -21,10 +21,15 @@ sudo apt update
 sudo apt-get build-dep mesa
 sudo apt install wget
 sudo apt install make cmake git wget vulkan-tools mesa-utils g++-arm-linux-gnueabihf g++-aarch64-linux-gnu
+cp /usr/include/libdrm/drm.h /usr/include/libdrm/drm_mode.h /usr/include/
 
 # main mesa repo
 git clone https://gitlab.freedesktop.org/mesa/mesa /home/gamer/Downloads
 cd /home/gamer/Downloads/
+
+BUILD_PREFIX=/home/gamer/Downloads/
+MESA_PREFIX=${BUILD_PREFIX}/mesa
+#MESA_PREFIX=${BUILD_PREFIX}/mesa-turnip-feature-a7xx-basic-support
 
 #Building arm64 binary
 # all arm64 requirments
