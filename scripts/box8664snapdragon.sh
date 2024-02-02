@@ -1,5 +1,5 @@
 #!/bin/bash
-#Part 5 - Debian User - Compiling and Installing box86-box64 for snapdragon
+#Part 6 - Debian User - Compiling and Installing box86-box64 for snapdragon
 #box8664snapdragon.sh
 
 #This script is for Snapdragon devices only.
@@ -18,3 +18,5 @@ git clone https://github.com/ptitSeb/box64 /home/gamer/Downloads/
 cd ~/Downloads/box64; mkdir build; cd build; cmake ../ -DSD888=1 -DCMAKE_BUILD_TYPE=RelWithDebInfo; make -j$(nproc); sudo make install
 
 cd ~/
+
+
