@@ -16,3 +16,11 @@ useradd -U -m -G wheel,audio,video,storage -s /bin/bash gamer -p gamer
 apt install -y sudo
 # Adding them to admin sudoers file
 echo "gamer  ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+
+# Creating the the home user folders, idk why there not auto made
+mkdir /home/gamer/Desktop
+mkdir /home/gamer/Documents
+mkdir /home/gamer/Downloads
+mkdir /home/gamer/Music
+mkdir /home/gamer/Pictures
+mkdir /home/gamer/Videos
