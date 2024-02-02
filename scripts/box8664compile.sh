@@ -3,10 +3,18 @@
 #bash box8664compile.sh
 set -e
 
+sudo apt install gcc-arm-linux-gnueabihf make cmake git wget
 
-#Grabing box86 and 64 github due to not having binfmt, we use box86/64 bash
-git clone https://github.com/ptitSeb/box86 /home/gamer/
-git clone https://github.com/ptitSeb/box64 /home/gamer/
+# Box86 clone, compile, and install (-DRK3399=1 is for most AArch64)
+git clone https://github.com/ptitSeb/box86 /home/gamer/Downloads
+cd ~/Downloads/box86; mkdir build; cd build; cmake ../ -DRK3399=1; make -j$(nproc); sudo make install
+
+# Box64 clone, compile, and install (-DRK3399=1 is for most AArch64)
+git clone https://github.com/ptitSeb/box64 /home/gamer/Downloads
+cd ~/Downloads/box64; mkdir build; cd build; cmake ../ -DRK3399=1; make -j$(nproc); sudo make install
+
+cd ~/
+
 # use to fix not having binfmt
 "export BOX86_BASH=~/box86/tests/bash" >> ~/.bashrc
 "export BOX64_BASH=~/box64/tests/bash" >> ~/.bashrc
