@@ -117,12 +117,12 @@ cd ${BUILD_PREFIX}
 
 sudo apt remove -y mesa-vulkan-drivers:armhf
 sudo apt download mesa-vulkan-drivers:armhf
-sudo dpkg-deb -e mesa-vulkan-drivers_*_armhf.deb ${MESA_32}/DEBIAN/
-sudo sed -ie "3s/.*/Version: ${MESA_VER}-${DATE}/g" ${MESA_32}/DEBIAN/control
-sudo rm mesa-vulkan-drivers_*_armhf.deb
-sudo rm ${MESA_32}/DEBIAN/md5sums ${MESA_32}/DEBIAN/triggers
-sudo rm -rf ${MESA_32}/usr/share/drirc.d
-sudo dpkg-deb --build --root-owner-group ${MESA_32}
+dpkg-deb -e mesa-vulkan-drivers_*_armhf.deb ${MESA_32}/DEBIAN/
+sed -ie "3s/.*/Version: ${MESA_VER}-${DATE}/g" ${MESA_32}/DEBIAN/control
+rm mesa-vulkan-drivers_*_armhf.deb
+rm ${MESA_32}/DEBIAN/md5sums ${MESA_32}/DEBIAN/triggers
+rm -rf ${MESA_32}/usr/share/drirc.d
+dpkg-deb --build --root-owner-group ${MESA_32}
 
 #puting pkg-config back
 sudo apt remove pkg-config
