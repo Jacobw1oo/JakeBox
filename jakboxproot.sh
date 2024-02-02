@@ -30,9 +30,10 @@ curl -s -o $JAKSCRIPTS/box8664apt.sh https://raw.githubusercontent.com/Jacobw1oo
 bash $JAKSCRIPTS/box8664apt.sh
 
 #Part 5 - Debian User - Installing turnip v4 GPU drivers
+curl -s -o $JAKSCRIPTS/turnipv4.sh https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/scripts/turnipv4.sh
+bash $JAKSCRIPTS/turnipv4.sh
 
 #Part 6 - Debian User - box86&box64 
-
 #TODO MENU all menus should be at the top#
 
 #Part 6 - Debian User - Installing box86-box64 from debian repo
