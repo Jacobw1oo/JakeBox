@@ -9,7 +9,7 @@
 
 
 echo "Installing JakeBox "
-echo "estimated time to completion is 20 minuties"
+echo "Estimated time to completion is 20 minuties"
 echo "-------------------------------------------"
 
 #Part 1 - Termux - Installing proot-debian
