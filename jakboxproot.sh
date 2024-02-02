@@ -47,3 +47,7 @@ bash $JAKSCRIPTS/turnipv4.sh
 #Part 6 - Debian User - Compiling and Installing box86-box64 for snapdragon
 curl -s -o $JAKSCRIPTS/box8664snapdragon.sh https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/scripts/box8664snapdragon.sh
 bash $JAKSCRIPTS/box8664snapdragon.sh
+
+#Part 7 - Debian User - Install the frist Wine
+curl -s -o $JAKSCRIPTS/wine91.shhttps://raw.githubusercontent.com/Jacobw1oo/JakBox/main/scripts/wine91.sh
+bash $JAKSCRIPTS/wine91.sh
