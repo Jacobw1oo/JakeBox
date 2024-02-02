@@ -24,7 +24,7 @@ sudo apt install make cmake git wget vulkan-tools mesa-utils g++-arm-linux-gnuea
 cp /usr/include/libdrm/drm.h /usr/include/libdrm/drm_mode.h /usr/include/
 
 # main mesa repo
-git clone https://gitlab.freedesktop.org/mesa/mesa /home/gamer/Downloads
+git clone https://gitlab.freedesktop.org/mesa/mesa /home/gamer/Downloads/mesa
 cd /home/gamer/Downloads/
 
 BUILD_PREFIX=/home/gamer/Downloads/
