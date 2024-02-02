@@ -17,11 +17,8 @@ echo "Part 1 - Termux - Installing proot-debian"
 
 echo "allow-external-apps = true" >> ~/.termux/termux.properties && echo "hide-soft-keyboard-on-startup = true" >> ~/.termux/termux.properties
 pkg clean && termux-setup-storage && yes | pkg update && pkg install nano wget proot-distro pulseaudio -y && pkg clean && proot-distro install debian && proot-distro clear-cache &&
-echo 'pulseaudio --verbose --start --exit-idle-time=-1 --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1"
-alias jakeboxsys="proot-distro login debian --user gamer --shared-tmp --no-sysvipc -- bash -c "termux-x11 :0 -xstartup "dbus-launch --exit-with-session xfce4-session"
-""' >> ~/.bashrc 
-alias jakebox="proot-distro login debian --user gamer --shared-tmp -- bash -c "termux-x11 :0 -xstartup "dbus-launch --exit-with-session xfce4-session"
-""' >> ~/.bashrc && . ~/.bashrc && termux-reload-settings
+echo 'pulseaudio --verbose --start --exit-idle-time=-1 --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" alias jakeboxsys="proot-distro login debian --user gamer --shared-tmp --no-sysvipc -- bash -c "termux-x11 :0 -xstartup "dbus-launch --exit-with-session xfce4-session"
+" alias jakebox="proot-distro login debian --user gamer --shared-tmp -- bash -c "termux-x11 :0 -xstartup "dbus-launch --exit-with-session xfce4-session"' >> ~/.bashrc && . ~/.bashrc && termux-reload-settings
 
 echo "Part 1 - Done"
 
