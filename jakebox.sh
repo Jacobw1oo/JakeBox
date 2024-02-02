@@ -25,9 +25,7 @@ echo "
 pulseaudio --verbose --start --exit-idle-time=-1 --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1"
 alias jakeboxsys="proot-distro login debian --user gamer --shared-tmp --no-sysvipc -- bash -c "termux-x11 :0 -xstartup "dbus-launch --exit-with-session xfce4-session"
 alias jakebox="proot-distro login debian --user gamer --shared-tmp -- bash -c "termux-x11 :0 -xstartup "dbus-launch --exit-with-session xfce4-session"
-
-c = 'arm-linux-gnueabihf-gcc'
-" > ${MESA_PREFIX}/arm64.txt
+" >> ${MESA_PREFIX}/arm64.txt
 
 
 # read bashrc to terminal and reloads settings
