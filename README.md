@@ -14,7 +14,7 @@ Installation instructions
 curl -s -o ~/jakbox.sh https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/jakbox.sh && . ~/jakbox.sh
 ```
 
-3. Type `jakbox` in termux or `jakboxsys` if you need --no-sysvipc".
+3. Type `jakbox` in termux or `jakboxsys` if you need "--no-sysvipc".
 
 #
 Thank these creators [Olegos2](https://github.com/olegos2/mobox), [Ilya114](https://github.com/Ilya114/Box64Droid/), [Cheadrian](https://github.com/cheadrian/termux-chroot-proot-wine-box86_64/), [Raezroth](https://github.com/Raezroth/Linux-ARM-Gaming-Chroot) and Big thanks to Hugo, JeezDisReez, ptitSeb, MishkaKolos, Xanzo, Jotaros, Maxython and others for help.
