@@ -87,8 +87,8 @@ sudo dpkg-deb --build --root-owner-group ${MESA_64}
 sudo apt install zlib1g-dev:armhf libexpat1-dev:armhf libdrm-dev:armhf libx11-dev:armhf libx11-xcb-dev:armhf libxext-dev:armhf libxdamage-dev:armhf libxcb-glx0-dev:armhf libxcb-dri2-0-dev:armhf libxcb-dri3-dev:armhf libxcb-shm0-dev:armhf libxcb-present-dev:armhf libxshmfence-dev:armhf libxrandr-dev:armhf libwayland-dev:armhf wayland-protocols:armhf libwayland-egl-backend-dev:armhf -y
 
 # pkgconfig will not work unless it's arch matches
-sudo apt remove pkg-config
-sudo apt install pkg-config:armhf
+sudo apt remove pkg-config -y
+sudo apt install pkg-config:armhf -y
 
 cd ${MESA_PREFIX}
 mkdir build32
