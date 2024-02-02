@@ -29,6 +29,12 @@ source ~/.bashrc
 #echo 'alias gl="MESA_NO_ERROR=1 MESA_GL_VERSION_OVERRIDE=4.3COMPAT MESA_GLES_VERSION_OVERRIDE=3.2 virgl_test_server_android &"' >> ~/.bashrc
 #source ~/.bashrc
 
+#Part Pre 3 - Termux - prep for xfce4
+pkg update
+pkg install x11-repo -Y
+pkg install termux-x11-nightly -Y
+pkg install xfce -Y
+
 #Part Pre 3 - Termux - Loading into proot
 #loads into proot and continues the script at jakboxproot
 proot-distro login debian --user root --shared-tmp --no-sysvipc -- bash -c "curl -s -o ~/jakboxproot.sh https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/jakboxproot.sh; bash .jakboxproot.sh"
