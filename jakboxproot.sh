@@ -18,3 +18,7 @@ bash $JAKSCRIPTS/xfce4.sh
 #Username: gamer Password: gamer
 curl -s -o $JAKSCRIPTS/addusergamer.sh https://raw.githubusercontent.com/Jacobw1oo/JakBox/main/scripts/addusergamer.sh
 bash $JAKSCRIPTS/addusergamer.sh
+
+#Part 5 Pre - Debian user - logining to user
+su gamer
+# should add id checks here, making sure user is not root user
