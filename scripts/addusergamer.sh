@@ -16,8 +16,3 @@ useradd -U -m -G wheel,audio,video,storage -s /bin/bash gamer -p gamer
 apt install -y sudo
 # Adding them to admin sudoers file
 echo "gamer  ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
-
-# Update alias command to with user
-alias jakbox="proot-distro login debian --user gamer --shared-tmp --no-sysvipc"' >> ~/.bashrc
-# Update alias command to with user and for steam
-alias jakboxsteam="proot-distro login debian --user gamer --shared-tmp "' >> ~/.bashrc
