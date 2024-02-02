@@ -1,4 +1,4 @@
 #!/bin/bash
-#Part 5 - Debian User - Installing ternupv4 PGU drivers
+#Part 5 - Debian User - Installing turnip v4 GPU drivers
 #turnipv4.sh
 set -e
