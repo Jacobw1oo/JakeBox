@@ -30,10 +30,8 @@ source ~/.bashrc
 #source ~/.bashrc
 
 #Part Pre 3 - Termux - Loading into proot
+#loads into proot and continues the script at jakboxproot
+proot-distro login debian --user root --shared-tmp --no-sysvipc
 
-#Part 3 - Debian - Installing xfce4
-#bash scripts/xfce4.sh
-
-#Part 4 - Debian - Adding User
 #Username: gamer Password: gamer
-#bash scripts/addusergamer.sh
+
