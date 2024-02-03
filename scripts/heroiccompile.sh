@@ -9,6 +9,7 @@
 sudo apt install -y nodejs yarn
 
 #Clone the repo 
+cd ~/Downloads
 git clone https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher.git --recurse-submodules
 cd HeroicGamesLauncher
 
@@ -23,3 +24,5 @@ yarn dist:linux deb
 
 
 #install heroic games launcher deb
+
+cd ~/
