@@ -1,7 +1,8 @@
 #!/bin/bash
-#Part 3 - Debian - Installing xfce4
-echo "Part 4 - Debian - Installing xfce4"
 #xfce4.sh
+#Part 4 - Debian - Installing xfce4
+echo "Part 4 - Debian - Installing xfce4"
+
 
 set -e
 echo "Installing xfce4 with Termux:X11 Support"
