@@ -148,4 +148,5 @@ Terminal=true
 Type=Application' > ~/Desktop/GLXGears_turnip.desktop
 chmod +x ~/Desktop/GLXGears_turnip.desktop
 
+echo "Part 7 - Done"
 sleep 10
