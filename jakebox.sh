@@ -36,9 +36,9 @@ echo 'pulseaudio --verbose --start --exit-idle-time=-1 --load="module-native-pro
 echo 'alias jakeboxgamer="proot-distro login debian --user gamer --shared-tmp --no-sysvipc" ' >> ~/.bashrc
 echo 'alias jakeboxroot="proot-distro login debian --user root --shared-tmp --no-sysvipc" ' >> ~/.bashrc
 
-echo proot-distro login debian --user gamer --shared-tmp -- bash -c 'termux-x11 :0 -xstartup "dbus-launch --exit-with-session xfce4-session"' >> ~/jakebox
+echo proot-distro login debian --user gamer --shared-tmp -- bash -c 'termux-x11 :0 -xstartup "dbus-launch --exit-with-session xfce4-session"' > ~/jakebox
 chmod +x ~/jakebox
-echo proot-distro login debian --user gamer --shared-tmp --no-sysvipc -- bash -c 'termux-x11 :0 -xstartup "dbus-launch --exit-with-session xfce4-session"' >> ~/jakeboxsys
+echo proot-distro login debian --user gamer --shared-tmp --no-sysvipc -- bash -c 'termux-x11 :0 -xstartup "dbus-launch --exit-with-session xfce4-session"' > ~/jakeboxsys
 chmod +x ~/jakeboxsys
 
 # read bashrc to terminal and reloads settings
