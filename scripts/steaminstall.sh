@@ -1,4 +1,5 @@
-
+#!/bin/bash
+#Part 9 - Debian User - installing steam
 #steaminstall.sh
 
 apt install -y binutils xterm file zenity pciutils libcairo2 libcairo2:armhf libxdamage1 libxdamage1:armhf libjpeg-dev libjpeg-dev:armhf libselinux1 libselinux1:armhf libgl1-mesa-glx libgl1-mesa-glx:armhf libogg-dev libogg-dev:armhf libvorbis-dev libvorbis-dev:armhf libice6 libice6:armhf libxss1 libxss1:armhf libxtst6 libxtst6:armhf libbz2-dev libbz2-dev:armhf libsm6 libsm6:armhf
