@@ -73,6 +73,6 @@ echo "Part 6 - Done"
 
 #Part 7 - Debian User - Install the frist Wine
 echo "Part 7 - Debian User - Install the frist Wine"
-curl -s -o $JAKESCRIPTS/wine91.shhttps://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/wine91.sh
+curl -s -o $JAKESCRIPTS/wine91.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/wine91.sh
 bash $JAKESCRIPTS/wine91.sh
 echo "Part 7 - Done"
