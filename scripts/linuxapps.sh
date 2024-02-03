@@ -2,8 +2,14 @@
 #Part 8 - Debian User - Installing easy apps from debian repo
 #linuxapps.sh
 
-# installing easy apps
+#installing easy apps
 sudo apt install -y firefox-esr playonlinux
+
+#installing Lutris
+echo "deb [signed-by=/etc/apt/keyrings/lutris.gpg] https://download.opensuse.org/repositories/home:/strycore/Debian_12/ ./" | sudo tee /etc/apt/sources.list.d/lutris.list > /dev/null
+wget -q -O- https://download.opensuse.org/repositories/home:/strycore/Debian_12/Release.key | gpg --dearmor | sudo tee /etc/apt/keyrings/lutris.gpg > /dev/null
+sudo apt update
+sudo apt install -y lutris
 
 # cheadrian idea on how to easily make sure when start containers on playonlinux correctly, I like it, 
 echo '#!/bin/bash -i
