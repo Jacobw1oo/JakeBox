@@ -53,7 +53,7 @@ echo "Part 2 - Done"
 #source ~/.bashrc
 
 #Part Pre 3 - Termux - prep for xfce4
-echo "Part 3 prep - Termux - prep for xfce4 & loading into proot"
+echo "Part 3 - Termux - prep for xfce4 & loading into proot"
 pkg update
 pkg install x11-repo -y
 pkg install termux-x11-nightly -y
@@ -61,7 +61,7 @@ pkg install xfce -y
 
 #Part Pre 3 - Termux - Loading into proot
 #loads into proot and continues the script at jakeboxproot
-echo "Part 3 prep - Done"
+echo "Part 3 - Done"
 #proot-distro login debian --user root --shared-tmp --no-sysvipc -- bash -c "curl -s -o ~/jakeboxproot.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/jakeboxproot.sh; bash jakeboxproot.sh"
 
 echo "JakeBox install is complete"
