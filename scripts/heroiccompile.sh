@@ -1,6 +1,9 @@
 #!/bin/bash
 #Part 9 - Debian User - compile and install heroic games launcher
-#steaminstall.sh
+#heroiccompile.sh
+
+#HeroicGamesLauncher will remain a compile due to how often it updates and that epic games often breaks the pervious version.
+
 
 #Make sure Git, NodeJS, and Yarn are installed
 
