@@ -37,8 +37,8 @@ echo "Part 1 - Done"
 #Part 2 - Termux - Installing VirGL Zink
 echo "Part 2 - Termux - Installing VirGL Zink"
 
-pkg install x11-repo tur-repo
-pkg install mesa-zink virglrenderer-mesa-zink
+pkg install x11-repo tur-repo -y
+pkg install mesa-zink virglrenderer-mesa-zink -y
 
 echo 'alias zink="MESA_NO_ERROR=1 MESA_GL_VERSION_OVERRIDE=4.3COMPAT MESA_GLES_VERSION_OVERRIDE=3.2 GALLIUM_DRIVER=zink ZINK_DESCRIPTORS=lazy virgl_test_server --use-egl-surfaceless --use-gles &"' >> ~/.bashrc
 source ~/.bashrc
@@ -54,9 +54,9 @@ echo "Part 2 - Done"
 #Part Pre 3 - Termux - prep for xfce4
 echo "Part 3 prep - Termux - prep for xfce4 & loading into proot"
 pkg update
-pkg install x11-repo -Y
-pkg install termux-x11-nightly -Y
-pkg install xfce -Y
+pkg install x11-repo -y
+pkg install termux-x11-nightly -y
+pkg install xfce -y
 
 #Part Pre 3 - Termux - Loading into proot
 #loads into proot and continues the script at jakeboxproot
