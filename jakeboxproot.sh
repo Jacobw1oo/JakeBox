@@ -43,6 +43,13 @@ curl -s -o $JAKESCRIPTS/turnipmesa24-1.sh https://raw.githubusercontent.com/Jaco
 bash $JAKESCRIPTS/turnipmesa24-1.sh
 echo "Part 5 - Done"
 
+
+##Part 5 post - Debian user - compiling and installing gl4es
+echo "Part 5 post - Debian user - compiling and installing gl4es"
+curl -s -o $JAKESCRIPTS/gl4es.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/gl4es.sh
+bash $JAKESCRIPTS/gl4es.sh
+echo "Part 5 post - Done"
+
 #Part 6 - Debian User - box86&box64 
 #TODO MENU all menus should be at the top#
 
