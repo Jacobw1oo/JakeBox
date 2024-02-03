@@ -44,24 +44,18 @@ bash $JAKESCRIPTS/gl4es.sh
 #TODO MENU all menus should be at the top#
 
 #Part 9 - Debian User - Installing box86-box64 from debian repo
-#curl -s -o $JAKESCRIPTS/debianpackages.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/debianpackages.sh
-#bash $JAKESCRIPTS/debianpackages.sh
-#echo "Part 9 - Done"
+#curl -s -o $JAKESCRIPTS/box8664apt.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/box8664apt.sh
+#bash $JAKESCRIPTS/box8664apt.sh
 
 #Part 9 - Debian User - Compiling and Installing box86-box64
-#echo "Part 9 - Debian User - Compiling and Installing box86-box64"
 #curl -s -o $JAKESCRIPTS/box8664compile.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/box8664compile.sh
 #bash $JAKESCRIPTS/box8664compile.sh
-#echo "Part 9 - Done"
 
 #Part 9 - Debian User - Compiling and Installing box86-box64 for snapdragon
-echo "Part 9 - Debian User - Compiling and Installing box86-box64 for snapdragon"
 curl -s -o $JAKESCRIPTS/box8664snapdragon.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/box8664snapdragon.sh
 bash $JAKESCRIPTS/box8664snapdragon.sh
-echo "Part 9 - Done"
 
 #Part 10 - Debian User - Install the frist Wine
-echo "Part 10 - Debian User - Install the frist Wine"
 curl -s -o $JAKESCRIPTS/wine91.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/wine91.sh
 bash $JAKESCRIPTS/wine91.sh
 echo "Part 10 - Done"
