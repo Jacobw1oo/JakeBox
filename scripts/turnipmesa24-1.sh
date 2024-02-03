@@ -1,6 +1,7 @@
 #!/bin/bash
-#Part 5 - Debian User - Installing turnip v4 GPU drivers
 #turnipmesa24-1.sh
+#Part 7 - Debian User - Installing mesa 24.1 turnip zink GPU drivers
+echo "Part 7 - Debian User - Installing mesa 24.1 turnip zink GPU drivers"
 set -e
 
 #making packages directory
@@ -31,3 +32,5 @@ Icon=glxgears
 Terminal=true
 Type=Application' > ~/Desktop/GLXGears_turnip.desktop
 chmod +x ~/Desktop/GLXGears_turnip.desktop
+
+echo "Part 7 - Done"
