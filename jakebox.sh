@@ -13,7 +13,7 @@ phase=$1
 #Todo make a pick menu
 
 # Had to be broken up into 3 phase do to diffrent systems and users
-if [ $phase -e 1 ]; then 
+if [ $phase -eq 1 ]; then 
 echo "Phase 1 selected" 
 sleep 3 
 echo "Installing JakeBox"
@@ -77,7 +77,7 @@ echo "Part 3 - Done"
 proot-distro login debian --user root --shared-tmp --no-sysvipc -- bash -c "curl -s -o ~/jakeboxproot.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/jakeboxproot.sh; . ~/jakebox.sh 2"
 #exit
 
-elif [ $phase -e 2 ]; then 
+elif [ $phase -eq 2 ]; then 
 echo "Phase 2 selected" 
 sleep 3 
 #start up on Debian - Creating scripts directory
@@ -98,7 +98,7 @@ su gamer -c "curl -s -o ~/jakeboxproot.sh https://raw.githubusercontent.com/Jaco
 # should add id checks here, making sure user is not root user
 #exit
 
-elif [ $phase -e 3 ]; then
+elif [ $phase -eq 3 ]; then
 echo "Phase 3 selected" 
 sleep 3 
 #Part 6 - Debian User - Installing lots of packages
