@@ -10,6 +10,9 @@ sudo apt install box86-android box64-android
 #Grabing box86 and 64 github due to not having binfmt, we use box86/64 bash
 git clone https://github.com/ptitSeb/box86 /home/gamer/box86
 git clone https://github.com/ptitSeb/box64 /home/gamer/box64
+
 # use to fix not having binfmt
+sudo chmod +x ~/box86/tests/bash
+sudo chmod +x ~/box64/tests/bash
 echo "export BOX86_BASH=~/box86/tests/bash
 'export BOX64_BASH=~/box64/tests/bash" >> ~/.bashrc
