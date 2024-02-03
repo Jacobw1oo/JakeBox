@@ -11,13 +11,13 @@
 export phase = $1
 if [ $phase -e 1 ]; then 
 echo "Phase 1 selected" 
-sleep 3 fi
+sleep 3 
 elif [ $phase -e 2 ]; then 
 echo "Phase 2 selected" 
-sleep 3 fi
+sleep 3 
 elif [ $phase -e 3 ]; then 
 echo "Phase 3 selected" 
-sleep 3 fi
+sleep 3 
 else  
 export phase = 1 
 echo "Defaulted to Phase 1" 
@@ -85,7 +85,7 @@ pkg install xfce -y
 echo "Part 3 - Done"
 # this starts phase 2
 proot-distro login debian --user root --shared-tmp --no-sysvipc -- bash -c "curl -s -o ~/jakeboxproot.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/jakeboxproot.sh; sh jakebox.sh 2"
-fi
+#exit
 
 elif [ $phase -e 2 ]; then 
 #start up on Debian - Creating scripts directory
@@ -103,7 +103,7 @@ curl -s -o $JAKESCRIPTS/addusergamer.sh https://raw.githubusercontent.com/Jacobw
 bash $JAKESCRIPTS/addusergamer.sh
 su gamer
 # should add id checks here, making sure user is not root user
-fi
+#exit
 
 elif [ $phase -e 3 ]; then 
 #Part 6 - Debian User - Installing lots of packages
