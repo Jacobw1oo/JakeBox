@@ -1,6 +1,7 @@
 #!/bin/bash
-#Part 8 - Debian User - Installing easy apps from debian repo
 #linuxapps.sh
+#Part 11 - Debian User - Installing firefox, playonlinux, Lutris
+echo "Part 11 - Debian User - Installing firefox, playonlinux, Lutris"
 
 #installing easy apps
 sudo apt install -y firefox-esr playonlinux
@@ -46,3 +47,5 @@ Categories=Utility;Emulator;' > ~/Desktop/PlayOnLinux_box64.desktop
 chmod +x ~/Desktop/PlayOnLinux_box64.desktop
 cp ~/Desktop/PlayOnLinux_box64.desktop /usr/share/applications/
 # End of cheadrian section 
+
+echo "Part 11 - Done"
