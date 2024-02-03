@@ -1,6 +1,8 @@
 #!/bin/bash
-#Part 5 post - Debian user - compiling and installing gl4es
 #gl4es.sh
+#Part 8 post - Debian user - compiling and installing gl4es
+echo "Part 8 post - Debian user - compiling and installing gl4es"
+set -e
 
 #get dependances
 apt install -y git gcc build-essential cmake libx11-dev
