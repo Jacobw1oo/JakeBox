@@ -4,19 +4,8 @@
 #Username: gamer Password: gamer
 set -e
 
-# Not sure what these do
-groupadd storage
-groupadd wheel
-groupadd video
-
 # Adding user
 useradd -U -m -s /bin/bash gamer -p gamer
-
-# adding the user to groups
-usermod -a -G wheel gamer
-usermod -a -G audio gamer
-usermod -a -G video gamer
-usermod -a -G storage gamer
 
 # Making sure sudo is installed
 apt install -y sudo
@@ -30,3 +19,13 @@ mkdir /home/gamer/Downloads
 mkdir /home/gamer/Music
 mkdir /home/gamer/Pictures
 mkdir /home/gamer/Videos
+
+# Not sure what these do
+groupadd storage
+groupadd wheel
+
+# adding the user to groups
+usermod -a -G wheel gamer
+usermod -a -G audio gamer
+usermod -a -G video gamer
+usermod -a -G storage gamer
