@@ -22,7 +22,8 @@ sleep 3
 else  
 phase=1 
 echo "Defaulted to Phase 1" 
-sleep 3 fi
+sleep 3 
+fi
 #Todo make a pick menu
 
 # Had to be broken up into 3 phase do to diffrent systems and users
