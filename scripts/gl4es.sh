@@ -13,5 +13,6 @@ cd gl4es
 #compiling and install
 mkdir build; cd build; cmake -S ../../gl4es; make install
 
-cd $JAKESCRIPTS/packages/
 rm -r gl4es
+
+cd $JAKESCRIPTS/packages/
