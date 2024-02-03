@@ -9,25 +9,13 @@
 
 # Had to be broken up into 3 phase due to diffrent systems and users
 phase=$1
-#checking input
-if [ $phase -e 1 ]; then 
-echo "Phase 1 selected" 
-sleep 3 
-elif [ $phase -e 2 ]; then 
-echo "Phase 2 selected" 
-sleep 3 
-elif [ $phase -e 3 ]; then 
-echo "Phase 3 selected" 
-sleep 3 
-else  
-phase=1 
-echo "Defaulted to Phase 1" 
-sleep 3 
-fi
+
 #Todo make a pick menu
 
 # Had to be broken up into 3 phase do to diffrent systems and users
 if [ $phase -e 1 ]; then 
+echo "Phase 1 selected" 
+sleep 3 
 echo "Installing JakeBox"
 echo "Estimated time to completion is 20 minuties"
 echo "-------------------------------------------"
@@ -90,6 +78,8 @@ proot-distro login debian --user root --shared-tmp --no-sysvipc -- bash -c "curl
 #exit
 
 elif [ $phase -e 2 ]; then 
+echo "Phase 2 selected" 
+sleep 3 
 #start up on Debian - Creating scripts directory
 mkdir /usr/local/bin/jakebox/
 mkdir /usr/local/bin/jakebox/scripts
@@ -108,7 +98,9 @@ su gamer -c "curl -s -o ~/jakeboxproot.sh https://raw.githubusercontent.com/Jaco
 # should add id checks here, making sure user is not root user
 #exit
 
-elif [ $phase -e 3 ]; then 
+elif [ $phase -e 3 ]; then
+echo "Phase 3 selected" 
+sleep 3 
 #Part 6 - Debian User - Installing lots of packages
 curl -s -o $JAKESCRIPTS/debianpackages.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/debianpackages.sh
 bash $JAKESCRIPTS/debianpackages.sh
@@ -153,5 +145,6 @@ bash $JAKESCRIPTS/steaminstall.sh
 curl -s -o $JAKESCRIPTS/heroiccompile.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/heroiccompile.sh
 bash $JAKESCRIPTS/heroiccompile.sh
 else
-echo "command argument has been bypassed"
+echo "Defaulted to Phase 1" 
+sleep 3 
 fi #end
