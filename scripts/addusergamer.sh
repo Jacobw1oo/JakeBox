@@ -10,7 +10,13 @@ groupadd wheel
 groupadd video
 
 # Adding user
-useradd -U -m -G wheel,audio,video,storage -s /bin/bash gamer -p gamer
+useradd -U -m -s /bin/bash gamer -p gamer
+
+# adding the user to groups
+usermod -a -G wheel gamer
+usermod -a -G audio gamer
+usermod -a -G video gamer
+usermod -a -G storage gamer
 
 # Making sure sudo is installed
 apt install -y sudo
