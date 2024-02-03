@@ -8,7 +8,8 @@
 # https://github.com/Raezroth/Linux-ARM-Gaming-Chroot
 
 # Had to be broken up into 3 phase due to diffrent systems and users
-export phase=$1
+phase=$1
+#checking input
 if [ $phase -e 1 ]; then 
 echo "Phase 1 selected" 
 sleep 3 
@@ -19,7 +20,7 @@ elif [ $phase -e 3 ]; then
 echo "Phase 3 selected" 
 sleep 3 
 else  
-export phase=1 
+phase=1 
 echo "Defaulted to Phase 1" 
 sleep 3 fi
 #Todo make a pick menu
