@@ -16,5 +16,5 @@ cd ~/box64; mkdir build; cd build; cmake ../ -DRK3399=1; make -j$(nproc); sudo m
 cd ~/
 
 # use to fix not having binfmt
-"export BOX86_BASH=~/box86/tests/bash" >> ~/.bashrc
-"export BOX64_BASH=~/box64/tests/bash" >> ~/.bashrc
+echo "export BOX86_BASH=~/box86/tests/bash
+'export BOX64_BASH=~/box64/tests/bash" >> ~/.bashrc
