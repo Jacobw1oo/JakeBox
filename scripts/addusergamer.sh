@@ -20,12 +20,10 @@ mkdir /home/gamer/Music
 mkdir /home/gamer/Pictures
 mkdir /home/gamer/Videos
 
-# Not sure what these do
-groupadd storage
-groupadd wheel
-
 # adding the user to groups
-usermod -a -G wheel gamer
 usermod -a -G audio gamer
 usermod -a -G video gamer
+groupadd wheel
+usermod -a -G wheel gamer
+groupadd storage
 usermod -a -G storage gamer
