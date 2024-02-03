@@ -1,6 +1,6 @@
 #!/bin/bash
 #Part 6 - Debian User - Compiling and Installing box86-box64
-#bash box8664compile.sh
+#box8664compile.sh
 set -e
 
 sudo apt install gcc-arm-linux-gnueabihf make cmake git wget
