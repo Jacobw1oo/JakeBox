@@ -33,8 +33,8 @@ su gamer
 # should add id checks here, making sure user is not root user
 
 #Part 5 Pre - Debian User - Installing lots of packages
-curl -s -o $JAKESCRIPTS/box8664apt.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/box8664apt.sh
-bash $JAKESCRIPTS/box8664apt.sh
+curl -s -o $JAKESCRIPTS/debianpackages.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/debianpackages.sh
+bash $JAKESCRIPTS/debianpackages.sh
 echo "Part 5 prep - Done"
 
 #Part 5 - Debian User - Installing mesa turnip zink GPU drivers
