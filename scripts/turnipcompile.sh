@@ -146,3 +146,5 @@ Icon=glxgears
 Terminal=true
 Type=Application' > ~/Desktop/GLXGears_turnip.desktop
 chmod +x ~/Desktop/GLXGears_turnip.desktop
+
+sleep 10
