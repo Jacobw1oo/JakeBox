@@ -1,5 +1,5 @@
 #!/bin/bash
-#Part 5 post - Debian user - Compiling and installing gl4es
+#Part 5 post - Debian user - compiling and installing gl4es
 #gl4es.sh
 
 #get dependances
