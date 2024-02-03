@@ -1,9 +1,8 @@
 #!/bin/bash
-#Part 9 - Debian User - compile and install heroic games launcher
 #heroiccompile.sh
-
+#Part 13 - Debian User - compile and install heroic games launcher
+echo "Part 13 - Debian User - Compiling and Installing Heroic Games Lanucher"
 #HeroicGamesLauncher will remain a compile due to how often it updates and that epic games often breaks the pervious version.
-
 
 #Make sure Git, NodeJS, and Yarn are installed
 sudo apt install -y nodejs yarn
@@ -22,7 +21,8 @@ cd HeroicGamesLauncher
 #uing for debian system
 yarn dist:linux deb
 
-
 #install heroic games launcher deb
-
+#sudo dpkg -i something
 cd ~/
+
+echo "Part 13 - Done"
