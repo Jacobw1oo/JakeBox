@@ -1,6 +1,8 @@
 #!/bin/bash
-#Part 4 - Debian - Adding User
 #addusergamer.sh
+#Part 5 - Debian - Adding User
+echo "Part 5 - Debian - Adding User"
+
 #Username: gamer Password: gamer
 set -e
 
@@ -27,3 +29,5 @@ groupadd wheel
 usermod -a -G wheel gamer
 groupadd storage
 usermod -a -G storage gamer
+
+echo "Part 5 - Done"
