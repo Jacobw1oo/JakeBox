@@ -15,6 +15,9 @@ echo "-------------------------------------------"
 #Part 1 - Termux - Installing proot-debian
 echo "Part 1 - Termux - Installing proot-debian"
 
+#termux-change-repo greatly increases chance that the termux installs will work, i dont know why packages struggle from termux
+termux-change-repo
+
 # Start of installings
 echo "allow-external-apps = true" >> ~/.termux/termux.properties 
 echo "hide-soft-keyboard-on-startup = true" >> ~/.termux/termux.properties
