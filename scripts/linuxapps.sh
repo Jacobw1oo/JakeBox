@@ -37,5 +37,4 @@ Icon=playonlinux
 Categories=Utility;Emulator;' > ~/Desktop/PlayOnLinux_box64.desktop
 chmod +x ~/Desktop/PlayOnLinux_box64.desktop
 cp ~/Desktop/PlayOnLinux_box64.desktop /usr/share/applications/
-
-# end
+# End of cheadrian section 
