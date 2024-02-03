@@ -9,7 +9,7 @@
 
 echo "Welcome to debian proot installer"
 
-#Part Pre 4 - Debian - Creating scripts directory
+#start up on Debian - Creating scripts directory
 mkdir /usr/local/bin/jakebox/
 mkdir /usr/local/bin/jakebox/scripts
 export JAKESCRIPTS="/usr/local/bin/jakebox/scripts"
