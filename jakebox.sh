@@ -8,7 +8,7 @@
 # https://github.com/Raezroth/Linux-ARM-Gaming-Chroot
 
 # Had to be broken up into 3 phase due to diffrent systems and users
-phase = $1
+export phase = $1
 if [ $phase -e 1 ]; then 
 echo "Phase 1 selected" 
 sleep 3 fi
@@ -19,7 +19,7 @@ elif [ $phase -e 3 ]; then
 echo "Phase 3 selected" 
 sleep 3 fi
 else  
-phase = 1 
+export phase = 1 
 echo "Defaulted to Phase 1" 
 sleep 3 fi
 #Todo make a pick menu
@@ -84,7 +84,7 @@ pkg install xfce -y
 #loads into proot and continues the script at jakeboxproot
 echo "Part 3 - Done"
 # this starts phase 2
-proot-distro login debian --user root --shared-tmp --no-sysvipc -- bash -c "curl -s -o ~/jakeboxproot.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/jakeboxproot.sh; bash jakeboxproot.sh"
+proot-distro login debian --user root --shared-tmp --no-sysvipc -- bash -c "curl -s -o ~/jakeboxproot.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/jakeboxproot.sh; sh jakebox.sh 2"
 fi
 
 elif [ $phase -e 2 ]; then 
