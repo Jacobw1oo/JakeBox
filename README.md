@@ -20,36 +20,36 @@ Massive Thanks to [ptitSeb](https://github.com/ptitSeb/box86), without box86 & b
 
 Thank these creators [Olegos2](https://github.com/olegos2/mobox), [Ilya114](https://github.com/Ilya114/Box64Droid/), [Cheadrian](https://github.com/cheadrian/termux-chroot-proot-wine-box86_64/), [Raezroth](https://github.com/Raezroth/Linux-ARM-Gaming-Chroot).
 
-Big thanks to [Sporif](https://github.com/Sporif/dxvk-async),Hugo, JeezDisReez, MishkaKolos, Xanzo, Jotaros, Maxython and others for help.
+Big thanks to Hugo, JeezDisReez, MishkaKolos, Xanzo, Jotaros, Maxython and others for help.
 
 ## Third party applications
 
-[glibc-packages](https://github.com/termux-pacman/glibc-packages)
+[glibc-packages](https://github.com/termux-pacman/glibc-packages) - Termux Team
 
-[Box64](https://github.com/ptitSeb/box64)
+[Box64](https://github.com/ptitSeb/box64) - [ptitSeb](https://github.com/ptitSeb/box86)
 
-[Box86](https://github.com/ptitSeb/box86)
+[Box86](https://github.com/ptitSeb/box86) - [ptitSeb](https://github.com/ptitSeb/box86)
 
-[DXVK](https://github.com/doitsujin/dxvk)
+[DXVK](https://github.com/doitsujin/dxvk) - [doitsujin](https://github.com/doitsujin/dxvk)
 
-[DXVK-ASYNC](https://github.com/Sporif/dxvk-async)
+[DXVK-ASYNC](https://github.com/Sporif/dxvk-async) - [Sporif](https://github.com/Sporif/dxvk-async)
 
-[DXVK-GPLASYNC](https://gitlab.com/Ph42oN/dxvk-gplasync)
+[DXVK-GPLASYNC](https://gitlab.com/Ph42oN/dxvk-gplasync) [Ph42oN](https://gitlab.com/Ph42oN/dxvk-gplasync)
 
-[VKD3D](https://github.com/lutris/vkd3d)
+[VKD3D](https://github.com/lutris/vkd3d) - Lutris team
 
-[D8VK](https://github.com/AlpyneDreams/d8vk)
+[D8VK](https://github.com/AlpyneDreams/d8vk) - [AlpyneDreams](https://github.com/AlpyneDreams/d8vk)
 
-[Termux-app](https://github.com/termux/termux-app)
+[Termux-app](https://github.com/termux/termux-app) - Termux Team
 
-[Termux-x11](https://github.com/termux/termux-x11)
+[Termux-x11](https://github.com/termux/termux-x11) - Termux Team
 
-[Wine](https://wiki.winehq.org/Licensing)
+[Wine](https://wiki.winehq.org/Licensing) - Wine Team
 
-[wine-ge-custom](https://github.com/GloriousEggroll/wine-ge-custom)
+[wine-ge-custom](https://github.com/GloriousEggroll/wine-ge-custom) - [GloriousEggroll](https://github.com/GloriousEggroll/wine-ge-custom)
 
-[Mesa](https://docs.mesa3d.org/license.html)
+[Mesa](https://docs.mesa3d.org/license.html) - Mesa Team
 
-[mesa-zink-11.06.22](https://github.com/alexvorxx/mesa-zink-11.06.22)
+[mesa-zink-11.06.22](https://github.com/alexvorxx/mesa-zink-11.06.22) - [alexvorxx](https://github.com/alexvorxx/mesa-zink-11.06.22)
 
-[Mesa-VirGL](https://github.com/alexvorxx/Mesa-VirGL)
+[Mesa-VirGL](https://github.com/alexvorxx/Mesa-VirGL) - [alexvorxx](https://github.com/alexvorxx/Mesa-VirGL)
