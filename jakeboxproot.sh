@@ -56,7 +56,16 @@ bash $JAKESCRIPTS/box8664snapdragon.sh
 curl -s -o $JAKESCRIPTS/wine91.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/wine91.sh
 bash $JAKESCRIPTS/wine91.sh
 
-#Part 11 - Debian User - Install the frist Wine
+#Part 11 - Debian User - Installing firefox, playonlinux, Lutris
 curl -s -o $JAKESCRIPTS/linuxapps.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/linuxapps.sh
 bash $JAKESCRIPTS/linuxapps.sh
 
+#Part 12 - Debian User - Installing steam
+curl -s -o $JAKESCRIPTS/steaminstall.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/steaminstall.sh
+bash $JAKESCRIPTS/steaminstall.sh
+
+#Part 13 - Debian User - Compiling and Installing Heroic Games Lanucher
+curl -s -o $JAKESCRIPTS/heroiccompile.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/heroiccompile.sh
+bash $JAKESCRIPTS/heroiccompile.sh
+
+#end
