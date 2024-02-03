@@ -44,7 +44,6 @@ bash $JAKESCRIPTS/gl4es.sh
 #TODO MENU all menus should be at the top#
 
 #Part 9 - Debian User - Installing box86-box64 from debian repo
-#echo "Part 9 - Debian User - Installing box86-box64 from debian repo"
 #curl -s -o $JAKESCRIPTS/debianpackages.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/debianpackages.sh
 #bash $JAKESCRIPTS/debianpackages.sh
 #echo "Part 9 - Done"
