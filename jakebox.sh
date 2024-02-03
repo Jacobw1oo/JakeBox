@@ -4,10 +4,10 @@
 # https://github.com/Ilya114/Box64Droid/
 # https://github.com/cheadrian/termux-chroot-proot-wine-box86_64/
 # https://github.com/Raezroth/Linux-ARM-Gaming-Chroot
-
+phase = 1
 #Todo make a pick menu
 
-
+if [ $phase -e 1 ] then 
 echo "Installing JakeBox"
 echo "Estimated time to completion is 20 minuties"
 echo "-------------------------------------------"
@@ -68,6 +68,8 @@ echo "Part 3 - Done"
 # this starts phase 2
 proot-distro login debian --user root --shared-tmp --no-sysvipc -- bash -c "curl -s -o ~/jakeboxproot.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/jakeboxproot.sh; bash jakeboxproot.sh"
 
+
+elif [ $phase -e 2 ] then 
 #start up on Debian - Creating scripts directory
 mkdir /usr/local/bin/jakebox/
 mkdir /usr/local/bin/jakebox/scripts
@@ -84,6 +86,7 @@ bash $JAKESCRIPTS/addusergamer.sh
 su gamer
 # should add id checks here, making sure user is not root user
 
+elif [ $phase -e 3 ] then 
 #Part 6 - Debian User - Installing lots of packages
 curl -s -o $JAKESCRIPTS/debianpackages.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/debianpackages.sh
 bash $JAKESCRIPTS/debianpackages.sh
