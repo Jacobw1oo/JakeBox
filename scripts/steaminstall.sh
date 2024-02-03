@@ -1,5 +1,5 @@
 #!/bin/bash
-#Part 9 - Debian User - installing steam
+#Part 10 - Debian User - installing steam
 #steaminstall.sh
 
 # Installing dependencies
