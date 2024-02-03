@@ -6,6 +6,7 @@
 
 
 #Make sure Git, NodeJS, and Yarn are installed
+sudo apt install -y nodejs yarn
 
 #Clone the repo 
 git clone https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher.git --recurse-submodules
