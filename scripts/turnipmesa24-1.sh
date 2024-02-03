@@ -12,3 +12,22 @@ curl -s -o /usr/local/bin/jakebox/packages/mesa-vulkan-kgsl_24.1.0-devel-2024020
 
 #Instilling Drivers
 sudo dpkg -i /usr/local/bin/jakebox/packages/mesa-vulkan-kgsl_24.1.0-devel-20240202_arm*
+
+#Tools for testing driver
+sudo apt install -y vulkan-tools mesa-utils glmark2-x11
+
+echo '[Desktop Entry]
+Name=VKCube Turnip
+Exec=bash -c "env TU_DEBUG=noconform MESA_VK_WSI_DEBUG=sw vkcube"
+Icon=vkcube
+Terminal=true
+Type=Application' > ~/Desktop/VKCube_turnip.desktop
+chmod +x ~/Desktop/VKCube_turnip.desktop
+
+echo '[Desktop Entry]
+Name=GLX Gears Turnip
+Exec=bash -c "env MESA_LOADER_DRIVER_OVERRIDE=zink TU_DEBUG=noconform glxgears"
+Icon=glxgears
+Terminal=true
+Type=Application' > ~/Desktop/GLXGears_turnip.desktop
+chmod +x ~/Desktop/GLXGears_turnip.desktop
