@@ -1,6 +1,6 @@
 #!/bin/bash
 #Part 5 - Debian User - Installing turnip v4 GPU drivers
-#turnipv4.sh
+#turnipmesa24-1.sh
 set -e
 
 #making packages directory
