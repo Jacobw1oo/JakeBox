@@ -1,3 +1,4 @@
+#gl4es.sh
 
 #Get dependances
 apt install -y git gcc build-essential cmake libx11-dev
