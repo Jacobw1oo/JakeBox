@@ -1,6 +1,7 @@
 #!/bin/bash
-#Part 7 - Debian User - Install the frist Wine
 #wine91.sh
+#Part 10 - Debian User - Install the frist Wine
+echo "Part 10 - Debian User - Install the frist Wine"
 #https://github.com/Kron4ek/Wine-Builds/releases/
 set -e
 
@@ -38,3 +39,5 @@ exec taskset -c 4-7 box86 wine "$@"
 ' > /usr/local/bin/vulkan
 
 sudo chmod +x /usr/local/bin/vulkan /usr/local/bin/zink /usr/local/bin/virgl
+
+echo "Part 10 - Done"
