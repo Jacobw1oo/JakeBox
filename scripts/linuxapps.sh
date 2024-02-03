@@ -26,4 +26,16 @@ Icon=playonlinux
 Categories=Utility;Emulator;' > ~/Desktop/PlayOnLinux_box.desktop
 chmod +x ~/Desktop/PlayOnLinux_box.desktop
 cp ~/Desktop/PlayOnLinux_box.desktop /usr/share/applications/
+
+echo '[Desktop Entry]
+Version=1.0
+Name=PlayOnLinux Box64
+Comment=Front-end application for the wine
+Type=Application
+Exec=bash -i -c "source ~/.bashrc && BEFORE_WINE=box64 box64 playonlinux %F"
+Icon=playonlinux
+Categories=Utility;Emulator;' > ~/Desktop/PlayOnLinux_box64.desktop
+chmod +x ~/Desktop/PlayOnLinux_box64.desktop
+cp ~/Desktop/PlayOnLinux_box64.desktop /usr/share/applications/
+
 # end
