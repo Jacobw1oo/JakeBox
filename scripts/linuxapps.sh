@@ -2,7 +2,7 @@
 #Part 8 - Debian User - Installing easy apps from debian repo
 #linuxapps.sh
 
-# installing firefox
+# installing easy apps
 sudo apt install -y firefox-esr playonlinux
 
 # cheadrian idea on how to easily make sure when start containers on playonlinux correctly, I like it, 
