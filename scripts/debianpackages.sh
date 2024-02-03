@@ -1,6 +1,7 @@
 #!/bin/bash
-#Part Pre 5 - Debian User - Installing lots of packages
 #debianpackages.sh
+#Part 6 - Debian User - Installing lots of packages
+echo "Part 6 - Debian User - Installing lots of packages"
 set -e
 
 # Install related kits
@@ -18,3 +19,5 @@ sudo apt install -y libgl1:arm64 libasound2:arm64 libc6:arm64 libglib2.0-0:arm64
 # Clean
 sudo apt clean
 sudo apt autoremove -y
+
+echo "Part 6 - Done"
