@@ -36,7 +36,7 @@ echo '
 pulseaudio --verbose --start --exit-idle-time=-1 --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1"
 alias jakebox="proot-distro login debian --user gamer --shared-tmp -- bash -c "termux-x11 :0 -xstartup "dbus-launch --exit-with-session xfce4-session""
 alias jakeboxsys="proot-distro login debian --user gamer --shared-tmp --no-sysvipc -- bash -c "termux-x11 :0 -xstartup "dbus-launch --exit-with-session xfce4-session""
-alias jakeboxroot="proot-distro login debian --user root --shared-tmp --no-sysvipc -- bash -c "termux-x11 :0 -xstartup "dbus-launch --exit-with-session xfce4-session""
+alias jakeboxroot="proot-distro login debian --user root --shared-tmp --no-sysvipc"
 ' >> ~/.bashrc
 
 
