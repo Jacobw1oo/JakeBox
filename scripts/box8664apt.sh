@@ -11,5 +11,5 @@ sudo apt install box86-android box64-android
 git clone https://github.com/ptitSeb/box86 /home/gamer/box86
 git clone https://github.com/ptitSeb/box64 /home/gamer/box64
 # use to fix not having binfmt
-"export BOX86_BASH=~/box86/tests/bash" >> ~/.bashrc
-"export BOX64_BASH=~/box64/tests/bash" >> ~/.bashrc
+echo "export BOX86_BASH=~/box86/tests/bash
+'export BOX64_BASH=~/box64/tests/bash" >> ~/.bashrc
