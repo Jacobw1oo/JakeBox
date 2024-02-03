@@ -22,7 +22,7 @@ Thank these creators [Olegos2](https://github.com/olegos2/mobox), [Ilya114](http
 
 Big thanks to Hugo, JeezDisReez, MishkaKolos, Xanzo, Jotaros, Maxython and others for help.
 
-## Third party applications
+## Third party credit - these software make this work.
 
 [glibc-packages](https://github.com/termux-pacman/glibc-packages) - Termux Team
 
