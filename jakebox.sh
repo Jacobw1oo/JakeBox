@@ -83,6 +83,7 @@ sleep 3
 #start up on Debian - Creating scripts directory
 mkdir /usr/local/bin/jakebox/
 mkdir /usr/local/bin/jakebox/scripts
+mkdir /usr/local/bin/jakebox/packages
 export JAKESCRIPTS="/usr/local/bin/jakebox/scripts"
 
 #Part 4 - Debian - Installing xfce4
