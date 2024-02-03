@@ -14,8 +14,9 @@ sudo apt install -y lutris
 
 #lutris fix for cant figure out GPU
 cd /usr/lib/python3/dist-packages/lutris/util/graphics
-# have to break path on line, 
+# have to break path on line 182, i do it by just adding a r to drm 
 sudo rm drivers.py
+
 
 # cheadrian idea on how to easily make sure when start containers on playonlinux correctly, I like it, 
 echo '#!/bin/bash -i
