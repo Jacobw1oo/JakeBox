@@ -40,9 +40,6 @@ bash $JAKESCRIPTS/turnipmesa23-3.sh
 curl -s -o $JAKESCRIPTS/gl4es.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/gl4es.sh
 bash $JAKESCRIPTS/gl4es.sh
 
-#Part 9 - Debian User - box86&box64 
-#TODO MENU all menus should be at the top#
-
 #Part 9 - Debian User - Installing box86-box64 from debian repo
 #curl -s -o $JAKESCRIPTS/box8664apt.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/box8664apt.sh
 #bash $JAKESCRIPTS/box8664apt.sh
@@ -58,4 +55,8 @@ bash $JAKESCRIPTS/box8664snapdragon.sh
 #Part 10 - Debian User - Install the frist Wine
 curl -s -o $JAKESCRIPTS/wine91.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/wine91.sh
 bash $JAKESCRIPTS/wine91.sh
-echo "Part 10 - Done"
+
+#Part 11 - Debian User - Install the frist Wine
+curl -s -o $JAKESCRIPTS/linuxapps.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/linuxapps.sh
+bash $JAKESCRIPTS/linuxapps.sh
+
