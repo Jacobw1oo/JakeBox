@@ -4,9 +4,12 @@
 # https://github.com/Ilya114/Box64Droid/
 # https://github.com/cheadrian/termux-chroot-proot-wine-box86_64/
 # https://github.com/Raezroth/Linux-ARM-Gaming-Chroot
+
+# Had to be broken up into 3 phase do to diffrent systems and users
 phase = 1
 #Todo make a pick menu
 
+# Had to be broken up into 3 phase do to diffrent systems and users
 if [ $phase -e 1 ] then 
 echo "Installing JakeBox"
 echo "Estimated time to completion is 20 minuties"
