@@ -1,6 +1,7 @@
 #!/bin/bash
-#Part 6 - Debian User - Compiling and Installing box86-box64
 #box8664compile.sh
+#Part 9 - Debian User - Compiling and Installing box86-box64
+echo "Part 9 - Debian User - Compiling and Installing box86-box64"
 set -e
 
 sudo apt install gcc-arm-linux-gnueabihf make cmake git wget
@@ -20,3 +21,5 @@ sudo chmod +x ~/box86/tests/bash
 sudo chmod +x ~/box64/tests/bash
 echo "export BOX86_BASH=~/box86/tests/bash
 'export BOX64_BASH=~/box64/tests/bash" >> ~/.bashrc
+
+echo "Part 9 - Done"
