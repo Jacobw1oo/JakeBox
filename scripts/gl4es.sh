@@ -5,7 +5,7 @@ echo "Part 8 post - Debian user - compiling and installing gl4es"
 set -e
 
 #get dependances
-apt install -y git gcc build-essential cmake libx11-dev
+sudo apt install -y git gcc build-essential cmake libx11-dev
 
 #git clone
 cd $JAKESCRIPTS/packages/
@@ -13,7 +13,7 @@ git clone https://github.com/ptitSeb/gl4es
 cd gl4es
 
 #compiling and install
-mkdir build; cd build; cmake -S ../../gl4es; make install
+mkdir build; cd build; cmake -S ../../gl4es; sudo make install
 
 rm -r gl4es
 
