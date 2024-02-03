@@ -12,11 +12,10 @@ wget -q -O- https://download.opensuse.org/repositories/home:/strycore/Debian_12/
 sudo apt update
 sudo apt install -y lutris
 
-#lutris fix for cant figure out GPU
-cd /usr/lib/python3/dist-packages/lutris/util/graphics
-# have to break path on line 182, i do it by just adding a r to drm 
-sudo rm drivers.py
-
+#lutris - fix for GPU permission error
+#have to break path on line 182, i do it by just adding a r to drm 
+sudo rm /usr/lib/python3/dist-packages/lutris/util/graphics/drivers.py
+curl -s -o /usr/lib/python3/dist-packages/lutris/util/graphics/drivers.py https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/packages/lutrisdrivers.py
 
 # cheadrian idea on how to easily make sure when start containers on playonlinux correctly, I like it, 
 echo '#!/bin/bash -i
