@@ -1,5 +1,7 @@
 #!/bin/bash
 # JakeBox uses some of the best parts from 4 diffrent proot, chroot setup githubs
+#Username: gamer Password: gamer
+#Thanks below
 # https://github.com/olegos2/mobox
 # https://github.com/Ilya114/Box64Droid/
 # https://github.com/cheadrian/termux-chroot-proot-wine-box86_64/
@@ -71,6 +73,7 @@ echo "Part 3 - Done"
 # this starts phase 2
 proot-distro login debian --user root --shared-tmp --no-sysvipc -- bash -c "curl -s -o ~/jakeboxproot.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/jakeboxproot.sh; bash jakeboxproot.sh"
 
+exit 1
 
 elif [ $phase -e 2 ] then 
 #start up on Debian - Creating scripts directory
@@ -88,6 +91,7 @@ curl -s -o $JAKESCRIPTS/addusergamer.sh https://raw.githubusercontent.com/Jacobw
 bash $JAKESCRIPTS/addusergamer.sh
 su gamer
 # should add id checks here, making sure user is not root user
+exit 1
 
 elif [ $phase -e 3 ] then 
 #Part 6 - Debian User - Installing lots of packages
@@ -134,7 +138,5 @@ bash $JAKESCRIPTS/steaminstall.sh
 curl -s -o $JAKESCRIPTS/heroiccompile.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/heroiccompile.sh
 bash $JAKESCRIPTS/heroiccompile.sh
 
+exit 1
 #end
-
-#Username: gamer Password: gamer
-
