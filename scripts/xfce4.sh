@@ -1,5 +1,6 @@
 #!/bin/bash
 #Part 3 - Debian - Installing xfce4
+echo "Part 4 - Debian - Installing xfce4"
 #xfce4.sh
 
 set -e
@@ -13,3 +14,5 @@ apt clean && apt autoremove -y
 echo 'taskset -c 4-7 termux-x11 :1 -xstartup startxfce4 2> /dev/null &' > /usr/local/bin/x11
 
 chmod +x /usr/local/bin/x11
+
+echo "Part 4 - Done"
