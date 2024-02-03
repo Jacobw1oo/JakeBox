@@ -151,4 +151,6 @@ bash $JAKESCRIPTS/steaminstall.sh
 #Part 13 - Debian User - Compiling and Installing Heroic Games Lanucher
 curl -s -o $JAKESCRIPTS/heroiccompile.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/heroiccompile.sh
 bash $JAKESCRIPTS/heroiccompile.sh
+else
+echo "command argument has been bypassed"
 fi #end
