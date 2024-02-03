@@ -11,6 +11,8 @@ wget -q -O- https://download.opensuse.org/repositories/home:/strycore/Debian_12/
 sudo apt update
 sudo apt install -y lutris
 
+#lutris fix for cant figure out GPU
+
 # cheadrian idea on how to easily make sure when start containers on playonlinux correctly, I like it, 
 echo '#!/bin/bash -i
 export BOX86_NOBANNER=1 BEFORE_WINE=box86
