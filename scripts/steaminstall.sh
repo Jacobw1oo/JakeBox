@@ -11,7 +11,7 @@ mkdir ~/Downloads/libpng
 cd ~/Downloads/libpng
 wget http://launchpadlibrarian.net/377987065/libpng12-0_1.2.54-1ubuntu1.1_armhf.deb
 wget http://launchpadlibrarian.net/377986999/libpng12-0_1.2.54-1ubuntu1.1_arm64.deb
-dpkg -i *.deb
+sudo dpkg -i *.deb
 cd ~
 rm -r ~/Downloads/libpng
 
