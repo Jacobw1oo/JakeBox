@@ -61,8 +61,13 @@ pkg install xfce -y
 
 #Part Pre 3 - Termux - Loading into proot
 #loads into proot and continues the script at jakeboxproot
+echo "Part 3 prep - Done"
 proot-distro login debian --user root --shared-tmp --no-sysvipc -- bash -c "curl -s -o ~/jakeboxproot.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/jakeboxproot.sh; bash jakeboxproot.sh"
 
-echo "Part 3 prep - Done"
+echo "JakeBox install is complete"
+echo "type jakebox to start the proot"
+echo "then type @@ to start the x11 server"
+echo "-------------------------------------------"
+
 #Username: gamer Password: gamer
 
