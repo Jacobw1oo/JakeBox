@@ -37,7 +37,7 @@ curl -s -o $JAKESCRIPTS/debianpackages.sh https://raw.githubusercontent.com/Jaco
 bash $JAKESCRIPTS/debianpackages.sh
 echo "Part 5 prep - Done"
 
-#Part 5 - Debian User - Installing mesa turnip zink GPU drivers
+#Part 5 - Debian User - Installing mesa turnip zink GPU drivers (having issues hte deb created is not compatable)
 echo "Part 5 - Debian User - Installing mesa 24.1 turnip zink GPU drivers"
 curl -s -o $JAKESCRIPTS/turnipmesa24-1.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/turnipmesa24-1.sh
 bash $JAKESCRIPTS/turnipmesa24-1.sh
