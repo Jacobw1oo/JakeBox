@@ -25,3 +25,4 @@ sudo chmod +x ~/box64/tests/bash
 echo "export BOX86_BASH=~/box86/tests/bash
 'export BOX64_BASH=~/box64/tests/bash" >> ~/.bashrc
 
+echo "Part 9 - Done"
