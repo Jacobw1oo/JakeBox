@@ -10,14 +10,18 @@
 # Had to be broken up into 3 phase due to diffrent systems and users
 phase = $1
 if [ $phase -e 1 ]; then 
-echo "Phase 1 selected" fi
+echo "Phase 1 selected" 
+sleep 3 fi
 elif [ $phase -e 2 ]; then 
-echo "Phase 2 selected" fi
+echo "Phase 2 selected" 
+sleep 3 fi
 elif [ $phase -e 3 ]; then 
-echo "Phase 3 selected" fi
+echo "Phase 3 selected" 
+sleep 3 fi
 else  
 phase = 1 
-echo "Defaulted to Phase 1" fi
+echo "Defaulted to Phase 1" 
+sleep 3 fi
 #Todo make a pick menu
 
 # Had to be broken up into 3 phase do to diffrent systems and users
