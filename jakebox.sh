@@ -101,7 +101,8 @@ bash $JAKESCRIPTS/xfce4.sh
 #Username: gamer Password: gamer
 curl -s -o $JAKESCRIPTS/addusergamer.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/addusergamer.sh
 bash $JAKESCRIPTS/addusergamer.sh
-su gamer
+# changing user to gamer and continuing with installaztion
+su gamer -c "curl -s -o ~/jakeboxproot.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/jakeboxproot.sh; sh jakebox.sh 3"
 # should add id checks here, making sure user is not root user
 #exit
 
