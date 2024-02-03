@@ -10,7 +10,7 @@ Installation instructions
 2. Open termux and paste command
 
 ```bash
-curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/jakebox.sh && sh ~/jakebox.sh 1
+curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/jakebox.sh && . ~/jakebox.sh 1
 ```
 
 3. Type `jakebox` in termux or `jakeboxsys` if you need "--no-sysvipc".
