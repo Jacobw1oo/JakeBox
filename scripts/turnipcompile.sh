@@ -1,6 +1,7 @@
 #!/bin/bash
-#Part 5 - Debian User - compiling and installing turnip GPU drivers
 #turnipcompile.sh
+#Part 7 - Debian User - compiling and installing turnip GPU drivers
+echo "Part 7 - Debian User - compiling and installing turnip GPU drivers"
 
 #some fun file links
 #https://gitlab.freedesktop.org/mesa/mesa
