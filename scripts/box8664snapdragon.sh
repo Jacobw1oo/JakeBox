@@ -1,6 +1,8 @@
 #!/bin/bash
-#Part 6 - Debian User - Compiling and Installing box86-box64 for snapdragon
 #box8664snapdragon.sh
+#Part 9 - Debian User - Compiling and Installing box86-box64 for snapdragon
+echo "Part 9 - Debian User - Compiling and Installing box86-box64 for snapdragon"
+set -e
 
 #This script is for Snapdragon devices only.
 #https://github.com/ptitSeb/box86/blob/master/docs/COMPILE.md
