@@ -2,6 +2,8 @@
 #box8664compile.sh
 #Part 9 - Debian User - Compiling and Installing box86-box64
 echo "Part 9 - Debian User - Compiling and Installing box86-box64"
+
+# If amy command fails, script is stoped
 set -e
 
 sudo apt install gcc-arm-linux-gnueabihf make cmake git wget
