@@ -10,8 +10,8 @@ wget https://github.com/xDoge26/proot-setup/raw/main/Packages/mesa-vulkan-kgsl_2
 wget https://github.com/xDoge26/proot-setup/raw/main/Packages/mesa-vulkan-kgsl_23.3.0-devel-20230728_armhf.deb
 
 #Instilling Drivers
-sudo dpkg -i /usr/local/bin/jakebox/packages/mesa-vulkan-kgsl_23.3.0-devel-20230812_arm64.deb
-sudo dpkg -i /usr/local/bin/jakebox/packages/mesa-vulkan-kgsl_23.3.0-devel-20230812_armhf.deb 
+sudo dpkg -i /usr/local/bin/jakebox/packages/mesa-vulkan-kgsl_23.3.0-devel-20230728_arm64.deb
+sudo dpkg -i /usr/local/bin/jakebox/packages/mesa-vulkan-kgsl_23.3.0-devel-20230728_armhf.deb 
 
 #Tools for testing driver
 sudo apt install -y vulkan-tools mesa-utils glmark2-x11
