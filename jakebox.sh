@@ -121,8 +121,8 @@ bash $JAKESCRIPTS/debianpackages.sh
 #MESA_LOADER_DRIVER_OVERRIDE=zink TU_DEBUG=noconform MESA_GL_VERSION_OVERRIDE=4.6COMPAT MESA_GLES_VERSION_OVERRIDE=3.2 LD_LIBRARY_PATH=/path/to/gl4es dbus-launch --exit-with-session startxfce4
 
 #Part 7 - Debian User - Installing mesa turnip zink GPU drivers (having issues hte deb created is not compatable)
-#curl -s -o $JAKESCRIPTS/turnipmesa23-3.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/turnipmesa23-3.sh
-#bash $JAKESCRIPTS/turnipmesa23-3.sh
+curl -s -o $JAKESCRIPTS/turnipmesa23-3.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/turnipmesa23-3.sh
+bash $JAKESCRIPTS/turnipmesa23-3.sh
 
 #Part 7 - Debian User - Installing mesa turnip zink GPU drivers (having issues hte deb created is not compatable)
 curl -s -o $JAKESCRIPTS/turnipmesa24-1.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/turnipmesa24-1.sh
