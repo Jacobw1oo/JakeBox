@@ -5,7 +5,7 @@ echo "Part 7 - Debian User - Installing mesa 23.3 turnip zink GPU drivers"
 set -e
 
 #Downloading turnip zink drivers
-cd 
+cd /usr/local/bin/jakebox/packages/
 wget https://github.com/xDoge26/proot-setup/raw/main/Packages/mesa-vulkan-kgsl_23.3.0-devel-20230728_arm64.deb
 wget https://github.com/xDoge26/proot-setup/raw/main/Packages/mesa-vulkan-kgsl_23.3.0-devel-20230728_armhf.deb
 
@@ -32,5 +32,6 @@ Terminal=true
 Type=Application' > ~/Desktop/GLXGears_turnip.desktop
 chmod +x ~/Desktop/GLXGears_turnip.desktop
 
+cd ~/
 echo "Part 7 - Done"
 sleep 10
