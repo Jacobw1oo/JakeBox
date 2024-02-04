@@ -110,6 +110,11 @@ sleep 3
 curl -s -o $JAKESCRIPTS/debianpackages.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/debianpackages.sh
 bash $JAKESCRIPTS/debianpackages.sh
 
+#Part 7 
+#mesa-vulkan-kgsl_24.1.0 (arm64 - segmentation fault, armhf - Incompatible driver armhf)
+#mesa-vulkan-kgsl_23.3.0-1 - 20230812 (both segmentation fault)
+#mesa-vulkan-kgsl_23.3.0-2 - 20230803 (both segmentation fault)
+
 #Part 7 - Debian User - Installing mesa turnip zink GPU drivers (having issues hte deb created is not compatable)
 curl -s -o $JAKESCRIPTS/turnipmesa23-3.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/turnipmesa23-3.sh
 bash $JAKESCRIPTS/turnipmesa23-3.sh
