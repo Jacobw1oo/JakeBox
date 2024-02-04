@@ -10,11 +10,12 @@ set -e
 sudo apt install -y libvulkan1:armhf 
 
 #Downloading turnip zink drivers
-curl -s -o /usr/local/bin/jakebox/packages/mesa-vulkan-kgsl_24.1.0-devel-20240202_arm64.deb https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/packages/mesa-vulkan-kgsl_24.1.0-devel-20240202_arm64.deb
-curl -s -o /usr/local/bin/jakebox/packages/mesa-vulkan-kgsl_24.1.0-devel-20240202_arm32.deb https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/packages/mesa-vulkan-kgsl_24.1.0-devel-20240202_arm32.deb
+curl -s -o /usr/local/bin/jakebox/packages/mesa-vulkan-kgsl_24.1.0-devel-20240120_arm64.deb https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/packages/mesa-vulkan-kgsl_24.1.0-devel-20240120_arm64.deb
+#Dont have armhf version - I dont know if it is needed.
+#curl -s -o /usr/local/bin/jakebox/packages/mesa-vulkan-kgsl_24.1.0-devel-20240202_arm32.deb https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/packages/mesa-vulkan-kgsl_24.1.0-devel-20240202_arm32.deb
 
 #Instilling Drivers
-sudo dpkg -i /usr/local/bin/jakebox/packages/mesa-vulkan-kgsl_24.1.0-devel-20240202_arm*
+sudo dpkg -i /usr/local/bin/jakebox/packages/mesa-vulkan-kgsl_24.1.0-devel-20240120_arm64.deb
 
 #Tools for testing driver
 sudo apt install -y vulkan-tools mesa-utils glmark2-x11
