@@ -114,17 +114,19 @@ bash $JAKESCRIPTS/debianpackages.sh
 #mesa-vulkan-kgsl_24.1.0 (arm64 - segmentation fault, armhf - Incompatible driver armhf)
 #mesa-vulkan-kgsl_23.3.0-1 - 20230812 (both segmentation fault)
 #mesa-vulkan-kgsl_23.3.0-2 - 20230803 (both segmentation fault)
+#mesa-vulkan-kgsl_23.3.0-devel-20230910_debian_arm64.deb (untested)
+#mesa-vulkan-kgsl_24.1.0-devel-20240120_arm64.deb (works)
 
 #idea
 #MESA_LOADER_DRIVER_OVERRIDE=zink TU_DEBUG=noconform MESA_GL_VERSION_OVERRIDE=4.6COMPAT MESA_GLES_VERSION_OVERRIDE=3.2 LD_LIBRARY_PATH=/path/to/gl4es dbus-launch --exit-with-session startxfce4
 
 #Part 7 - Debian User - Installing mesa turnip zink GPU drivers (having issues hte deb created is not compatable)
-curl -s -o $JAKESCRIPTS/turnipmesa23-3.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/turnipmesa23-3.sh
-bash $JAKESCRIPTS/turnipmesa23-3.sh
+#curl -s -o $JAKESCRIPTS/turnipmesa23-3.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/turnipmesa23-3.sh
+#bash $JAKESCRIPTS/turnipmesa23-3.sh
 
 #Part 7 - Debian User - Installing mesa turnip zink GPU drivers (having issues hte deb created is not compatable)
-#curl -s -o $JAKESCRIPTS/turnipmesa24-1.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/turnipmesa24-1.sh
-#bash $JAKESCRIPTS/turnipmesa24-1.sh
+curl -s -o $JAKESCRIPTS/turnipmesa24-1.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/turnipmesa24-1.sh
+bash $JAKESCRIPTS/turnipmesa24-1.sh
 
 #Part 8 - Debian user - compiling and installing gl4es
 curl -s -o $JAKESCRIPTS/gl4es.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/gl4es.sh
