@@ -2,6 +2,8 @@
 #debianpackages.sh
 #Part 6 - Debian User - Installing lots of packages
 echo "Part 6 - Debian User - Installing lots of packages"
+
+# If amy command fails, script is stoped
 set -e
 
 # Install related kits
