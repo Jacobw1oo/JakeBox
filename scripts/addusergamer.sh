@@ -4,7 +4,6 @@
 echo "Part 5 - Debian - Adding User"
 
 #Username: gamer Password: gamer
-set -e
 
 # Adding user
 useradd -U -m -s /bin/bash gamer -p gamer
