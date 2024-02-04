@@ -18,6 +18,10 @@ cd ~/Downloads
 git clone https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher.git --recurse-submodules
 cd HeroicGamesLauncher
 
+#getting yarn ready
+npm i vite
+npm install
+
 #getting build depencices
 cd ~/.cache/yarn/v6/
 wget https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.11.11.tgz
