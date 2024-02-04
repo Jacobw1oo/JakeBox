@@ -9,7 +9,7 @@
 # https://github.com/Raezroth/Linux-ARM-Gaming-Chroot
 
 #Start desktop command while inside proot
-#MESA_LOADER_DRIVER_OVERRIDE=zink TU_DEBUG=noconform MESA_GL_VERSION_OVERRIDE=4.6COMPAT MESA_GLES_VERSION_OVERRIDE=3.2 LD_LIBRARY_PATH=/usr/lib/gl4es/ dbus-launch --exit-with-session startxfce4
+#MESA_LOADER_DRIVER_OVERRIDE=zink TU_DEBUG=noconform MESA_GL_VERSION_OVERRIDE=4.6COMPAT MESA_GLES_VERSION_OVERRIDE=3.2 LD_LIBRARY_PATH=/usr/lib/gl4es/ termux-x11 :0 -xstartup "dbus-launch --exit-with-session xfce4-session
 
 # Had to be broken up into 3 phase due to diffrent systems and users
 phase=$1
