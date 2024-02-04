@@ -3,8 +3,9 @@
 #Username: gamer Password: gamer
 #Thanks below
 # https://github.com/olegos2/mobox
-# https://github.com/Ilya114/Box64Droid/
 # https://github.com/cheadrian/termux-chroot-proot-wine-box86_64/
+# https://github.com/xDoge26/proot-setup
+# https://github.com/Ilya114/Box64Droid/
 # https://github.com/Raezroth/Linux-ARM-Gaming-Chroot
 
 # Had to be broken up into 3 phase due to diffrent systems and users
