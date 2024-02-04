@@ -2,6 +2,8 @@
 #turnipmesa23-3.sh
 #Part 7 - Debian User - Installing mesa 23.3 turnip zink GPU drivers
 echo "Part 7 - Debian User - Installing mesa 23.3 turnip zink GPU drivers"
+
+# If amy command fails, script is stoped
 set -e
 
 #dependices install for mesa-vulkan-kgsl_*_armhf
