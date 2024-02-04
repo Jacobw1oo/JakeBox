@@ -1,5 +1,5 @@
 #!/bin/bash
-#turnipmesa23-3.sh
+#turnipmesa23-3-1.sh
 #Part 7 - Debian User - Installing mesa 23.3 turnip zink GPU drivers - it a bit older than the other but confirmed to work
 echo "Part 7 - Debian User - Installing mesa 23.3 turnip zink GPU drivers"
 set -e
