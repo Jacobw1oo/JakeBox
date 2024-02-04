@@ -4,6 +4,9 @@
 echo "Part 7 - Debian User - Installing mesa 23.3 turnip zink GPU drivers"
 set -e
 
+#dependices install for mesa-vulkan-kgsl_*_armhf
+sudo apt install -y libvulkan1:armhf 
+
 #Downloading turnip zink drivers
 curl -s -o /usr/local/bin/jakebox/packages/mesa-vulkan-kgsl_23.3.0-devel-20230812_arm64.deb https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/packages/mesa-vulkan-kgsl_23.3.0-devel-20230812_arm64.deb
 curl -s -o /usr/local/bin/jakebox/packages/mesa-vulkan-kgsl_23.3.0-devel-20230812_armhf.deb https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/packages/mesa-vulkan-kgsl_23.3.0-devel-20230812_armhf.deb 
