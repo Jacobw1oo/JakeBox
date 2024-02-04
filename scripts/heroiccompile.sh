@@ -18,20 +18,17 @@ cd ~/Downloads
 git clone https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher.git --recurse-submodules
 cd HeroicGamesLauncher
 
-#getting yarn ready
-npm i vite vite-plugin-svgr @vitejs/plugin-react-swc --force
-npm config set registry http://registry.npmjs.org
-npm install electron --save-dev
-npm install
-
-
-
-#sudo apt install vite # this one was a hale merry
-
-#getting build depencices
+#getting yarn ready 
 cd ~/.cache/yarn/v6/
-wget https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.11.11.tgz
+wget https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.15.7.tgz
 cd ~/Downloads/HeroicGamesLauncher
+#updating all depencices
+yarn upgrade-interactive --latest --network-timeout 600000
+
+#npm install electron --save-dev
+#npm install
+
+#getting build depencices ready
 yarn
 
 #compile heroic games launcher into deb for aarch64
