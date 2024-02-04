@@ -4,8 +4,14 @@
 echo "Part 13 - Debian User - Compiling and Installing Heroic Games Lanucher"
 #HeroicGamesLauncher will remain a compile due to how often it updates and that epic games often breaks the pervious version.
 
-#Make sure Git, NodeJS, and Yarn are installed
-sudo apt install -y nodejs yarn
+#Installing NodeJS, 
+sudo apt install -y nodejs
+
+#installing Yarn
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt update
+sudo apt install -y yarn
 
 #Clone the repo 
 cd ~/Downloads
