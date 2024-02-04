@@ -19,10 +19,10 @@ git clone https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher.git --rec
 cd HeroicGamesLauncher
 
 #getting yarn ready
-#npm i vite vite-plugin-svgr @vitejs/plugin-react-swc --force
-#npm config set registry http://registry.npmjs.org
-#npm install electron --save-dev
-#npm install
+npm i vite vite-plugin-svgr @vitejs/plugin-react-swc --force
+npm config set registry http://registry.npmjs.org
+npm install electron --save-dev
+npm install
 
 
 
