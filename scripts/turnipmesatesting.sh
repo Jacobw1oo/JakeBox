@@ -6,12 +6,12 @@ set -e
 
 #Downloading turnip zink drivers
 cd /usr/local/bin/jakebox/packages/
-wget https://github.com/xDoge26/proot-setup/raw/main/Packages/mesa-vulkan-kgsl_23.3.0-devel-20230728_arm64.deb
-wget https://github.com/xDoge26/proot-setup/raw/main/Packages/mesa-vulkan-kgsl_23.3.0-devel-20230728_armhf.deb
+wget https://github.com/xDoge26/proot-setup/raw/main/Packages/mesa-vulkan-kgsl_23.3.0-devel-20230803_arm64.deb
+wget https://github.com/xDoge26/proot-setup/raw/main/Packages/mesa-vulkan-kgsl_23.3.0-devel-20230803_armhf.deb
 
 #Instilling Drivers
-sudo dpkg -i /usr/local/bin/jakebox/packages/mesa-vulkan-kgsl_23.3.0-devel-20230728_arm64.deb
-sudo dpkg -i /usr/local/bin/jakebox/packages/mesa-vulkan-kgsl_23.3.0-devel-20230728_armhf.deb 
+sudo dpkg -i /usr/local/bin/jakebox/packages/mesa-vulkan-kgsl_23.3.0-devel-20230803_arm64.deb
+sudo dpkg -i /usr/local/bin/jakebox/packages/mesa-vulkan-kgsl_23.3.0-devel-20230803_armhf.deb 
 
 #Tools for testing driver
 sudo apt install -y vulkan-tools mesa-utils glmark2-x11
