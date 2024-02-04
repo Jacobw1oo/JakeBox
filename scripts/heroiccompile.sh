@@ -19,6 +19,9 @@ git clone https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher.git --rec
 cd HeroicGamesLauncher
 
 #getting build depencices
+cd ~/.cache/yarn/v6/
+wget https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.11.11.tgz
+cd ~/Downloads/HeroicGamesLauncher
 yarn
 
 #compile heroic games launcher into deb for aarch64
