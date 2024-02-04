@@ -20,9 +20,13 @@ cd HeroicGamesLauncher
 
 #getting yarn ready
 #npm i vite vite-plugin-svgr @vitejs/plugin-react-swc --force
+#npm config set registry http://registry.npmjs.org
 #npm install electron --save-dev
 #npm install
-sudo apt install vite
+
+
+
+#sudo apt install vite # this one was a hale merry
 
 #getting build depencices
 cd ~/.cache/yarn/v6/
