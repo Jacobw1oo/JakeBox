@@ -22,6 +22,8 @@ cd HeroicGamesLauncher
 cd ~/.cache/yarn/v6/
 wget https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.15.7.tgz
 cd ~/Downloads/HeroicGamesLauncher
+
+yarn add https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.15.7.tgz
 #updating all depencices
 yarn upgrade-interactive --latest --network-timeout 600000
 
