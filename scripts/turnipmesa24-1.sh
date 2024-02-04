@@ -2,7 +2,12 @@
 #turnipmesa24-1.sh
 #Part 7 - Debian User - Installing mesa 24.1 turnip zink GPU drivers
 echo "Part 7 - Debian User - Installing mesa 24.1 turnip zink GPU drivers"
+
+# If amy command fails, script is stoped
 set -e
+
+#dependices install for mesa-vulkan-kgsl_*_armhf
+sudo apt install -y libvulkan1:armhf 
 
 #Downloading turnip zink drivers
 curl -s -o /usr/local/bin/jakebox/packages/mesa-vulkan-kgsl_24.1.0-devel-20240202_arm64.deb https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/packages/mesa-vulkan-kgsl_24.1.0-devel-20240202_arm64.deb
