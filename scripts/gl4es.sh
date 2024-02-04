@@ -2,6 +2,8 @@
 #gl4es.sh
 #Part 8 post - Debian user - compiling and installing gl4es
 echo "Part 8 post - Debian user - compiling and installing gl4es"
+
+# If amy command fails, script is stoped
 set -e
 
 #get dependances
