@@ -103,6 +103,7 @@ bash $JAKESCRIPTS/addusergamer.sh
 
 elif [ $phase -eq 3 ]; then
 echo "Phase 3 selected" 
+export JAKESCRIPTS="/usr/local/bin/jakebox/scripts"
 sleep 3 
 #Part 6 - Debian User - Installing lots of packages
 curl -s -o $JAKESCRIPTS/debianpackages.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/debianpackages.sh
