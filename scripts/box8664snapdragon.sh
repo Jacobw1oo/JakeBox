@@ -4,6 +4,8 @@
 echo "Part 9 - Debian User - Compiling and Installing box86-box64 for snapdragon"
 #This script is for Snapdragon devices only.
 #https://github.com/ptitSeb/box86/blob/master/docs/COMPILE.md
+
+# If amy command fails, script is stoped
 set -e
 
 #Installing build requiremnts
