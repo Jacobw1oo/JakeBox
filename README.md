@@ -49,7 +49,3 @@ Big thanks to Hugo, JeezDisReez, MishkaKolos, Xanzo, Jotaros, Maxython and other
 [wine-ge-custom](https://github.com/GloriousEggroll/wine-ge-custom) - [GloriousEggroll](https://github.com/GloriousEggroll/wine-ge-custom)
 
 [Mesa](https://docs.mesa3d.org/license.html) - Mesa Team
-
-[mesa-zink-11.06.22](https://github.com/alexvorxx/mesa-zink-11.06.22) - [alexvorxx](https://github.com/alexvorxx/mesa-zink-11.06.22)
-
-[Mesa-VirGL](https://github.com/alexvorxx/Mesa-VirGL) - [alexvorxx](https://github.com/alexvorxx/Mesa-VirGL)
