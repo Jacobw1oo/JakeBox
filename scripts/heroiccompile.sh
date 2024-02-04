@@ -18,13 +18,16 @@ cd ~/Downloads
 git clone https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher.git --recurse-submodules
 cd HeroicGamesLauncher
 
+#getting build depencices
+yarn
+
 #compile heroic games launcher into deb for aarch64
 #yarn dist:linux # Optionally specify a package to create (eg: deb, pacman, tar.xz, rpm, AppImage); default: AppImage
 
 #for an arch system (aarch64)
 #USE_SYSTEM_FPM=TRUE yarn dist:linux pacman
 
-#uing for debian system
+#compile for debian system
 yarn dist:linux deb
 
 #install heroic games launcher deb
