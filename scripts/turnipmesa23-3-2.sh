@@ -1,6 +1,6 @@
 #!/bin/bash
 #turnipmesa23-3-2.sh
-#Part 7 - Debian User - Installing mesa 23.3 turnip zink GPU drivers
+#Part 7 - Debian User - Installing mesa 23.3 turnip zink GPU drivers - bit newer but i encoutered an errors.
 echo "Part 7 - Debian User - Installing mesa 23.3 turnip zink GPU drivers"
 
 # If amy command fails, script is stoped
