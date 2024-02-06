@@ -14,8 +14,6 @@ sudo dbus-run-session
 sudo dbus-launch flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepohub.flatpak
 sudo dbus-launch flatpak install flathub
 
-flatpak remote-ls --all --arch=i386  temp
-
 #installing tooontown
 cd ~/Downloads
 wget https://cdn.toontownrewritten.com/launcher/linux/launcher.flatpakref
