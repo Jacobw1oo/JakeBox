@@ -20,7 +20,6 @@ flatpak remote-ls --all --arch=i386  temp
 cd ~/Downloads
 wget https://cdn.toontownrewritten.com/launcher/linux/launcher.flatpakref
 #Installing flatpak for amd64 not (AArch64)
-sudo dbus-launch flatpak install launcher.flatpakref
-#appling fix to repo
-flatpak remote-ls --all --arch=x86_64 launcher-origin
+sudo dbus-launch flatpak --arch=x86_64  install launcher.flatpakref
+
 #Note you need to use box64 or box86 to start app
