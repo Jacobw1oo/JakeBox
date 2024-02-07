@@ -32,6 +32,8 @@ curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 #3
 #install node js
 nvm install node
+nvm install 21.6.1
+nvm use 21.6.1
 
 yarn add https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.15.7.tgz
 #updating all depencices
