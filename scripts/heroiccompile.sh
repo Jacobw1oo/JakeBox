@@ -19,9 +19,19 @@ git clone https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher.git --rec
 cd HeroicGamesLauncher
 
 #getting yarn ready 
-cd ~/.cache/yarn/v6/
-wget https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.15.7.tgz
-cd ~/Downloads/HeroicGamesLauncher
+#cd ~/.cache/yarn/v6/
+#wget https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.15.7.tgz
+#cd ~/Downloads/HeroicGamesLauncher
+# Installing nvm depences
+sudo apt install -y curl gnupg2
+# Installing nvm
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+#fixes
+#1
+#2
+#3
+#install node js
+nvm install node
 
 yarn add https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.15.7.tgz
 #updating all depencices
