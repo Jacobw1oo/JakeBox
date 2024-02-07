@@ -37,7 +37,7 @@ nvm use 21.6.1
 
 yarn add https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.15.7.tgz
 #updating all depencices
-yarn upgrade-interactive --latest --network-timeout 600000
+USE_SYSTEM_FPM=TRUE yarn upgrade-interactive --latest --network-timeout 600000
 
 #npm install electron --save-dev
 #npm install
