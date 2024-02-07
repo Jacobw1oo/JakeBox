@@ -101,7 +101,7 @@ bash $JAKESCRIPTS/xfce4.sh
 curl -s -o $JAKESCRIPTS/addusergamer.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/addusergamer.sh
 bash $JAKESCRIPTS/addusergamer.sh
 # changing user to gamer and continuing with installaztion
-#su gamer -c "curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/jakebox.sh; . ~/jakebox.sh 3"
+su gamer -c "curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/jakebox.sh; . ~/jakebox.sh 3"
 # should add id checks here, making sure user is not root user
 #exit
 
@@ -119,9 +119,6 @@ bash $JAKESCRIPTS/debianpackages.sh
 #mesa-vulkan-kgsl_23.3.0-2 - 20230803 (both segmentation fault)
 #mesa-vulkan-kgsl_23.3.0-devel-20230910_debian_arm64.deb (untested)
 #mesa-vulkan-kgsl_24.1.0-devel-20240120_arm64.deb (works)
-
-#idea
-#MESA_LOADER_DRIVER_OVERRIDE=zink TU_DEBUG=noconform MESA_GL_VERSION_OVERRIDE=4.6COMPAT MESA_GLES_VERSION_OVERRIDE=3.2 LD_LIBRARY_PATH=/path/to/gl4es dbus-launch --exit-with-session startxfce4
 
 #Part 7 - Debian User - Installing mesa turnip zink GPU drivers (having issues hte deb created is not compatable)
 curl -s -o $JAKESCRIPTS/turnipmesa23-3.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/turnipmesa23-3.sh
