@@ -13,16 +13,7 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 sudo apt update
 sudo apt install -y yarn
 
-#Clone the repo 
-cd ~/Downloads
-git clone https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher.git --recurse-submodules
-cd HeroicGamesLauncher
-
-#getting yarn ready 
-#cd ~/.cache/yarn/v6/
-#wget https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.15.7.tgz
-#cd ~/Downloads/HeroicGamesLauncher
-# Installing nvm depences
+# Installing nvm dependencies
 sudo apt install -y curl gnupg2
 # Installing nvm
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
@@ -34,8 +25,20 @@ curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 nvm install node
 nvm install 21.6.1
 nvm use 21.6.1
+# using nvm to install dependencies that were broken
 
-yarn add https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.15.7.tgz
+
+#Clone the repo 
+cd ~/Downloads
+git clone https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher.git --recurse-submodules
+cd HeroicGamesLauncher
+
+#getting yarn ready 
+#cd ~/.cache/yarn/v6/
+#wget https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.15.7.tgz
+#cd ~/Downloads/HeroicGamesLauncher
+# yarn add https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.15.7.tgz
+
 #updating all depencices
 USE_SYSTEM_FPM=TRUE yarn upgrade-interactive --latest --network-timeout 600000
 
