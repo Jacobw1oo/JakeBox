@@ -25,7 +25,7 @@ cd ~/Downloads/HeroicGamesLauncher
 
 yarn add https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.15.7.tgz
 #updating all depencices
-yarn upgrade-interactive --latest
+yarn upgrade-interactive --latest --network-timeout 600000
 
 #npm install electron --save-dev
 #npm install
