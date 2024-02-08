@@ -10,6 +10,9 @@ echo "Part 13 - Debian User - Compiling and Installing Heroic Games Lanucher"
 #Installing NodeJS, 
 sudo apt install -y nodejs npm
 
+#will need this before using yarn
+export USE_SYSTEM_FPM=true 
+
 #installing Yarn
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
