@@ -65,7 +65,8 @@ npm install electron@27.3.2 --force
 USE_SYSTEM_FPM=TRUE yarn dist:linux # Optionally specify a package to create (eg: deb, pacman, tar.xz, rpm, AppImage); default: AppImage
 
 #install heroic games launcher deb
-#sudo dpkg -i heroic2.12.0_arm64.deb
+cd dist/
+sudo dpkg -i heroic2.12.0_arm64.deb
 cd ~/
 
 echo "Part 13 - Done"
