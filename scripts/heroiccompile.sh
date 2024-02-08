@@ -4,6 +4,9 @@
 echo "Part 13 - Debian User - Compiling and Installing Heroic Games Lanucher"
 #HeroicGamesLauncher will remain a compile due to how often it updates and that epic games often breaks the pervious version.
 
+#Installing Kate got alot of file editing to do
+#sudo apt install -y kate
+
 #Installing NodeJS, 
 sudo apt install -y nodejs npm
 
