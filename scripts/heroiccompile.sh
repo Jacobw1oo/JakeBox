@@ -27,36 +27,34 @@ nvm install 21.6.1
 nvm use 21.6.1
 # using nvm to install dependencies that were broken
 
-#cheating on this step
+#cheating on this step by doing a frist yarn on another computer
 #Clone the repo 
 #cd ~/Downloads
 #git clone https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher.git --recurse-submodules
 #cd HeroicGamesLauncher
 
-#updating all depencices
-#USE_SYSTEM_FPM=TRUE yarn upgrade-interactive --latest --network-timeout 600000
-
-#npm install electron --save-dev
-npm install
+#yarn 
 
 #end of cheating
 #then moving the updated directory
 
-
 #getting build depencices ready
 yarn
 
+#for testing compile driectory 
+#USE_SYSTEM_FPM=TRUE HEROIC_NO_REACT_DEVTOOLS=1 yarn start
+
 #compile heroic games launcher into deb for aarch64
-#yarn dist:linux # Optionally specify a package to create (eg: deb, pacman, tar.xz, rpm, AppImage); default: AppImage
-
-#for an arch system (aarch64)
-#USE_SYSTEM_FPM=TRUE yarn dist:linux pacman
-
-#compile for debian system
-USE_SYSTEM_FPM=TRUE yarn dist:linux deb
+USE_SYSTEM_FPM=TRUE yarn dist:linux # Optionally specify a package to create (eg: deb, pacman, tar.xz, rpm, AppImage); default: AppImage
 
 #install heroic games launcher deb
 #sudo dpkg -i something
 cd ~/
 
 echo "Part 13 - Done"
+
+#updating all depencices - DO NOT USE - to be removed
+#USE_SYSTEM_FPM=TRUE yarn upgrade-interactive --latest --network-timeout 600000
+
+#for an arch system (aarch64)
+#USE_SYSTEM_FPM=TRUE yarn dist:linux pacman
