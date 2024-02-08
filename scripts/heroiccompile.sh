@@ -44,7 +44,7 @@ nvm use 21.6.1
 #getting build depencices ready
 sudo apt install -y libopenjp2-7-dev
 #getting yarn depencices ready
-yarn
+yarn --network-timeout 600000
 
 #install a arm 64 compable electron
 npm install electron@27.3.2 --force
