@@ -42,7 +42,7 @@ nvm use 21.6.1
 #then moving the updated directory
 
 #getting build depencices ready
-sudo apt install -y libopenjp2-7-dev
+sudo apt install -y openjpeg-tools
 #getting yarn depencices ready
 yarn --network-timeout 600000
 
