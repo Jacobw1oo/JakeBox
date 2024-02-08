@@ -42,7 +42,7 @@ nvm use 21.6.1
 #then moving the updated directory
 
 #getting build depencices ready
-sudo apt install -y openjpeg-tools
+sudo apt install -y openjpeg-tools ruby-dev
 #getting yarn depencices ready
 yarn --network-timeout 600000
 
