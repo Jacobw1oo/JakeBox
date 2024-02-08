@@ -70,7 +70,10 @@ sudo dpkg -i heroic2.12.0_arm64.deb
 cd ~/
 
 
-#using and fixing dbus
+#fixing start issues
+cd /opt/Heroic
+sudo chown root chrome-sandbox
+sudo chmod 4755 chrome-sandbox
 sudo dbus-launch
 
 #running heroic
