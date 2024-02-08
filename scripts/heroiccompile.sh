@@ -69,7 +69,12 @@ cd dist/
 sudo dpkg -i heroic2.12.0_arm64.deb
 cd ~/
 
+
+#using and fixing dbus
+sudo dbus-launch
+
 #running heroic
+dbus-run-session heroic --no-sandbox
 
 
 echo "Part 13 - Done"
