@@ -42,6 +42,8 @@ nvm use 21.6.1
 #then moving the updated directory
 
 #getting build depencices ready
+sudo apt install -y libopenjp2-7-dev
+#getting yarn depencices ready
 yarn
 
 #install a arm 64 compable electron
