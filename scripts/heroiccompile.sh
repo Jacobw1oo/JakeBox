@@ -44,6 +44,8 @@ yarn
 #for testing compile driectory 
 #USE_SYSTEM_FPM=TRUE HEROIC_NO_REACT_DEVTOOLS=1 yarn start
 
+#in packages.json for dist-linux have to add --arm64 to --linux
+
 #compile heroic games launcher into deb for aarch64
 USE_SYSTEM_FPM=TRUE yarn dist:linux # Optionally specify a package to create (eg: deb, pacman, tar.xz, rpm, AppImage); default: AppImage
 
