@@ -69,6 +69,9 @@ cd dist/
 sudo dpkg -i heroic2.12.0_arm64.deb
 cd ~/
 
+#running heroic
+
+
 echo "Part 13 - Done"
 
 #updating all depencices - DO NOT USE - to be removed
