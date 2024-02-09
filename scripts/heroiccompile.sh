@@ -24,9 +24,9 @@ sudo apt install -y curl gnupg2
 # Installing nvm
 curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 #fixes
-#1
-#2
-#3
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 #install node js
 nvm install node
 nvm install 21.6.1
