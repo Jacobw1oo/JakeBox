@@ -49,6 +49,11 @@ sudo apt install -y openjpeg-tools ruby-dev
 sudo gem install ruby
 sudo gem install fpm
 
+#user need to update electron-builder.yml and change the mirror to this, version v27.0.0 are both on page 9 currently
+#https://github.com/electron/electron/releases/download/v
+#What is default
+#https://github.com/castlabs/electron-releases/releases/download/v
+
 #install a arm 64 compable electron - DO NOT USE -
 # npm install electron@27.3.2 --force
 
@@ -57,11 +62,6 @@ npm install electron@27.0.0 --force
 
 #getting yarn depencices ready
 yarn --network-timeout 600000
-
-#user need to update electron-builder.yml and change the mirror to this, version v27.0.0 are both on page 9 currently
-#https://github.com/electron/electron/releases/download/v
-#What is default
-#https://github.com/castlabs/electron-releases/releases/download/v
 
 #for testing compile driectory 
 #USE_SYSTEM_FPM=TRUE HEROIC_NO_REACT_DEVTOOLS=1 yarn start
