@@ -56,7 +56,7 @@ yarn --network-timeout 600000
 #install a arm 64 compable electron 
 npm install electron@27.0.0 --force
 
-#user need to update electron-builder.yml and change the mirror to this 
+#user need to update electron-builder.yml and change the mirror to this, version v27.0.0 are both on page 9 currently
 #https://github.com/electron/electron/releases/download/v
 #What is default
 #https://github.com/castlabs/electron-releases/releases/download/v
