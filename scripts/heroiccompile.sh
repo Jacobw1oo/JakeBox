@@ -55,6 +55,8 @@ npm install electron@27.3.2 --force
 
 #user need to update electron-builder.yml and change the mirror to this 
 #https://github.com/electron/electron/releases/download/v
+#What is default
+#https://github.com/castlabs/electron-releases/releases/download/v
 
 #for testing compile driectory 
 #USE_SYSTEM_FPM=TRUE HEROIC_NO_REACT_DEVTOOLS=1 yarn start
