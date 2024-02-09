@@ -55,8 +55,11 @@ sudo gem install fpm
 #https://github.com/castlabs/electron-releases/releases/download/v
 
 #fixing host key error for yarn later
-mkdir -p ~/.ssh
-ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+#mkdir -p ~/.ssh
+#ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+#ssh-keygen -t rsa -C "user.email"
+#cat ~/.ssh/id_rsa.pub
+#id_rsa.pub key to SSH keys list on your GitHub profile
 
 #install a arm 64 compable electron - DO NOT USE -
 # npm install electron@27.3.2 --force
