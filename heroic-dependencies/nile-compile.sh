@@ -2,7 +2,7 @@
 #nile-compile.sh.sh
 #Debian Proot - compiling nile
 #https://github.com/derrod/legendary
-#command line open source version of epic games
+#command line open source version of amazon games
 echo "Debian Proot - compiling legendary"
 
 sudo apt install python3-pycryptodome python3-requests python3-zstandard python3-protobuf python3-json5
