@@ -1,7 +1,7 @@
 #!/bin/bash
-#addusergamer.sh
-#Part 5 - Debian - Adding User
-echo "Part 5 - Debian - Adding User"
+#legendary-compile.sh
+#Debian Proot - compiling legendary
+#https://github.com/derrod/legendary
+#command line open source version of epic games
+echo "Debian Proot - compiling legendary"
 
-
-https://github.com/derrod/legendary
