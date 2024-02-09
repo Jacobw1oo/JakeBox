@@ -1,7 +1,7 @@
 #!/bin/bash
 #gogdl-compile.sh
-#Debian Proot - compiling legendary
-#https://github.com/derrod/legendary
-#command line open source version of epic games
-echo "Debian Proot - compiling legendary"
+#Debian Proot - compiling gogdl
+#https://github.com/asb/gogdl
+#yet another downloader for GOG.com
+echo "Debian Proot - compiling gogdl"
 
