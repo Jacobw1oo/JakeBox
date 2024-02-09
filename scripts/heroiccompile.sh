@@ -46,6 +46,7 @@ nvm use 21.6.1
 
 #getting build depencices ready
 sudo apt install -y openjpeg-tools ruby-dev
+sudo gem install ruby
 sudo gem install fpm
 #getting yarn depencices ready
 yarn --network-timeout 600000
