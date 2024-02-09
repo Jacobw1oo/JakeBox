@@ -15,3 +15,6 @@ git clone https://github.com/imLinguin/nile
 cd nile
 python3 -m venv env
 pyinstaller --onefile --name nile nile/cli.py
+
+#Running nile
+#./bin/nile
