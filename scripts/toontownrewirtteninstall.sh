@@ -6,13 +6,12 @@ echo "Part 13 - Debian user - installing toontown rewritten"
 #Installing flatpak package manager
 sudo apt install -y flatpak
 
-#start dbus session
-dbus-run-session
-sudo dbus-run-session
+#start dbus
+sudo dbus-launch
 
 #using and fixing flatpak
 sudo dbus-launch flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepohub.flatpak
-sudo dbus-launch flatpak install flathub
+sudo dbus-run-session flatpak install flathub
 
 #installing tooontown
 cd ~/Downloads
