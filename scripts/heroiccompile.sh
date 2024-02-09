@@ -65,7 +65,7 @@ sudo gem install fpm
 # npm install electron@27.3.2 --force
 
 #install a arm 64 compable electron 
-npm install electron@27.0.0 --force
+npm install electron@v27.0.0+wvcus --force
 
 #getting yarn depencices ready
 yarn --network-timeout 600000
