@@ -8,6 +8,7 @@ echo "Debian Proot - compiling legendary"
 sudo apt install python3-pycryptodome python3-requests python3-zstandard python3-protobuf python3-json5
 #pip install pyinstaller 
 sudo apt install python3-installer
+sudo apt install python3.11-venv
 git clone https://github.com/imLinguin/nile
 cd nile
 python3 -m venv env
