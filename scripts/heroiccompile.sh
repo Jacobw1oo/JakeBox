@@ -54,14 +54,14 @@ sudo gem install fpm
 #What is default
 #https://github.com/castlabs/electron-releases/releases/download/v
 
+#getting yarn depencices ready
+yarn --network-timeout 600000
+
 #install a arm 64 compable electron - DO NOT USE -
 # npm install electron@27.3.2 --force
 
 #install a arm 64 compable electron 
 npm install electron@27.0.0 --force
-
-#getting yarn depencices ready
-yarn --network-timeout 600000
 
 #for testing compile driectory 
 #USE_SYSTEM_FPM=TRUE HEROIC_NO_REACT_DEVTOOLS=1 yarn start
