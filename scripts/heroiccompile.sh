@@ -54,6 +54,16 @@ sudo gem install fpm
 #What is default
 #https://github.com/castlabs/electron-releases/releases/download/v
 
+#fixing host key error for yarn later
+mkdir -p ~/.ssh
+ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+
+#install a arm 64 compable electron - DO NOT USE -
+# npm install electron@27.3.2 --force
+
+#install a arm 64 compable electron 
+npm install electron@27.0.0 --force
+
 #getting yarn depencices ready
 yarn --network-timeout 600000
 
