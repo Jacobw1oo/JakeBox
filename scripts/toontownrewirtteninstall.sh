@@ -7,6 +7,8 @@ echo "Part 13 - Debian user - installing toontown rewritten"
 sudo apt install -y flatpak
 
 #start dbus
+mkdir /run/dbus
+dbus-daemon --system
 sudo dbus-launch
 
 #using and fixing flatpak
