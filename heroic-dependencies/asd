@@ -1,0 +1,19 @@
+env WINEDLLOVERRIDES="cchromaeditorlibrary64=" %command%
+
+eval $( echo "%command%" | sed "s/Launcher\/LariLauncher.exe'.*/bin\/bg3_dx11.exe'/" )
+
+Phone (1116 x 2480) (2480 x 1116)
+
+Start
+80 - 24
+
+x31
+80 - 36 (nope)
+
+Full screen
+156 - 32
+
+Desktop (1920 x 1080)
+240 - 67
+
+https://1drv.ms/f/s!AnFp-8BxVGy5ahBS2_I-F1gqpkk?e=UNm7zb
