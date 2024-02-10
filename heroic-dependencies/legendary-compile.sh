@@ -5,11 +5,8 @@
 #free and open-source Epic Games Launcher alternative
 echo "Debian Proot - compiling legendary"
 
-
-pip install requests
-git clone https://github.com/Heroic-Games-Launcher/heroic-gogdl
-cd heroic-gogdl
-./bin/gogdl --help
-
-pip install pyinstaller
-pyinstaller --onefile --name gogdl gogdl/cli.py
+sudo apt install python3 python3-requests python3-setuptools-git
+git clone https://github.com/derrod/legendary.git
+cd legendary
+pip install .
+echo 'export PATH=$PATH:~/.local/bin' >> ~/.profile && source ~/.profile
