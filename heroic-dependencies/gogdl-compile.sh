@@ -5,7 +5,7 @@
 #command line open source version of epic games
 echo "Debian Proot - compiling legendary"
 
-sudo apt install lua5.4
-git clone https://github.com/asb/gogdl
-cd gogdl
+
+git clone https://github.com/Heroic-Games-Launcher/heroic-gogdl
+cd heroic-gogdl
 
