@@ -19,10 +19,11 @@ phase=$1
 # Had to be broken up into 3 phase do to diffrent systems and users
 if [ $phase -eq 1 ]; then 
 echo "Phase 1 selected" 
-sleep 3 
+sleep 1
 echo "Installing JakeBox"
 echo "Estimated time to completion is 20 minuties"
 echo "-------------------------------------------"
+sleep 10
 
 #Part 1 - Termux - Installing proot-debian
 echo "Part 1 - Termux - Installing proot-debian"
