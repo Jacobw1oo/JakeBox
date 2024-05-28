@@ -114,6 +114,9 @@ sleep 3
 curl -s -o $JAKESCRIPTS/debianpackages.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/debianpackages.sh
 bash $JAKESCRIPTS/debianpackages.sh
 
+echo "override phase 3"
+sleep 30
+
 #Part 7 
 #mesa-vulkan-kgsl_24.1.0 (arm64 - segmentation fault, armhf - Incompatible driver armhf)
 #mesa-vulkan-kgsl_23.3.0-1 - 20230812 (both segmentation fault)
