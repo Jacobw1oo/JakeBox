@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#DEPRICATED, no long used
+#DEPRICATED, no longer used
 
 #gl4es.sh
 #Part 8 post - Debian user - compiling and installing gl4es
