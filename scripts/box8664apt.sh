@@ -1,4 +1,7 @@
 #!/bin/bash
+
+#DEPRICATED, no long used
+
 #box8664apt.sh
 #Part 9 - Debian User - Installing box86-box64 from debian repo
 echo "Part 9 - Debian User - Installing box86-box64 from debian repo"
