@@ -1,4 +1,7 @@
 #!/bin/bash
+
+#DEPRICATED, no longer used
+
 #wine91.sh
 #Part 10 - Debian User - Install the frist Wine
 echo "Part 10 - Debian User - Install the frist Wine"
