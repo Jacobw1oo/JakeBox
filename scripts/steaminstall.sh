@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#DEPRICATED, no long used
+#DEPRICATED, no longer used
 
 #steaminstall.sh
 #Part 12 - Debian User - installing steam
