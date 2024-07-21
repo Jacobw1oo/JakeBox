@@ -1,4 +1,7 @@
 #!/bin/bash
+
+#DEPRICATED, no longer used
+
 #nile-compile.sh.sh
 #Debian Proot - compiling nile
 #https://github.com/asb/gogdl
