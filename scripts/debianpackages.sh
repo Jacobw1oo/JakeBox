@@ -1,4 +1,7 @@
 #!/bin/bash
+
+#DEPRICATED, no long used
+
 #debianpackages.sh
 #Part 6 - Debian User - Installing lots of packages
 echo "Part 6 - Debian User - Installing lots of packages"
