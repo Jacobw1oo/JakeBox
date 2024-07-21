@@ -1,4 +1,5 @@
 #!/bin/sh
+#DEPRICATED, no long used
 killall -9 termux-x11 pulseaudio virgl_test_server_android
 termux-wake-lock; termux-toast "Starting Debian Liunx"
 
