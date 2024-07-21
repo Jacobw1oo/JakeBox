@@ -1,4 +1,7 @@
 #!/bin/bash
+
+#DEPRICATED, no long used
+
 #linuxapps.sh
 #Part 11 - Debian User - Installing firefox, playonlinux, Lutris
 echo "Part 11 - Debian User - Installing firefox, playonlinux, Lutris"
