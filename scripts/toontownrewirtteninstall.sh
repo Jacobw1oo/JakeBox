@@ -1,4 +1,7 @@
 #!/bin/bash
+
+#DEPRICATED, no long used
+
 #toontownrewirtteninstall.sh
 #Part 13 - Debian user - compiling and installing gl4es
 echo "Part 13 - Debian user - installing toontown rewritten"
