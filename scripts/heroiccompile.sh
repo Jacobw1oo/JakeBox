@@ -1,4 +1,7 @@
 #!/bin/bash
+
+#DEPRICATED, no long used
+
 #heroiccompile.sh
 #Part 13 - Debian User - compile and install heroic games launcher
 echo "Part 13 - Debian User - Compiling and Installing Heroic Games Lanucher"
