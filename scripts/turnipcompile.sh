@@ -1,4 +1,7 @@
 #!/bin/bash
+
+#DEPRICATED, no long used
+
 #turnipcompile.sh
 #Part 7 - Debian User - compiling and installing turnip GPU drivers
 echo "Part 7 - Debian User - compiling and installing turnip GPU drivers"
