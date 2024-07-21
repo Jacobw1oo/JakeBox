@@ -1,4 +1,7 @@
 #!/bin/bash
+
+#DEPRICATED, no long used
+
 #addusergamer.sh
 #Part 5 - Debian - Adding User
 echo "Part 5 - Debian - Adding User"
