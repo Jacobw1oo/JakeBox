@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#DEPRICATED, no long used
+#DEPRICATED, no longer used
 
 #Part 4 - Debian - Adding Custom User (Disabled)
 #addcustomuser.sh
