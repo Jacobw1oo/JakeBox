@@ -1,4 +1,7 @@
 #!/bin/bash
+
+#DEPRICATED, no longer used
+
 #xfce4.sh
 #Part 4 - Debian - Installing xfce4
 echo "Part 4 - Debian - Installing xfce4"
