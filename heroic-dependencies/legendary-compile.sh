@@ -1,4 +1,7 @@
 #!/bin/bash
+
+#DEPRICATED, no longer used
+
 #legendary-compile.sh
 #Debian Proot - compiling legendary
 #https://github.com/derrod/legendary
