@@ -1,4 +1,7 @@
 #!/bin/bash
+
+#DEPRICATED, no long used
+
 #steaminstall.sh
 #Part 12 - Debian User - installing steam
 echo "Part 12 - Debian User - Installing steam"
