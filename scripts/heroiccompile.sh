@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#DEPRICATED, no long used
+#DEPRICATED, no longer used
 
 #heroiccompile.sh
 #Part 13 - Debian User - compile and install heroic games launcher
