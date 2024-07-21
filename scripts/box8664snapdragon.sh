@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#DEPRICATED, no long used
+#DEPRICATED, no longer used
 
 #box8664snapdragon.sh
 #Part 9 - Debian User - Compiling and Installing box86-box64 for snapdragon
