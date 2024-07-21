@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#DEPRICATED, no long used
+#DEPRICATED, no longer used
 
 #toontownrewirtteninstall.sh
 #Part 13 - Debian user - compiling and installing gl4es
