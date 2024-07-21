@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#DEPRICATED, no long used
+#DEPRICATED, no longer used
 
 #turnipcompile.sh
 #Part 7 - Debian User - compiling and installing turnip GPU drivers
