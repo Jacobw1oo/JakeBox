@@ -68,11 +68,11 @@ sudo apt update
 sudo apt install box86-android box64-android
 
 #Grabing box86 and 64 github due to not having binfmt, we use box86/64 bash
-#wget https://raw.githubusercontent.com/ptitSeb/box86/tests/bash -O /usr/local/bin/box86-bash
-wget https://github.com/ptitSeb/box86/blob/c5bccdf300ff5017b7225e49a934c395c51f297b/tests/bash -O /usr/local/bin/box86-bash
+#sudo wget https://raw.githubusercontent.com/ptitSeb/box86/tests/bash -O /usr/local/bin/box86-bash
+sudo wget https://github.com/ptitSeb/box86/blob/c5bccdf300ff5017b7225e49a934c395c51f297b/tests/bash -O /usr/local/bin/box86-bash
 
-#wget https://raw.githubusercontent.com/ptitSeb/box64/tests/bash -O /usr/local/bin/box64-bash
-wget https://github.com/ptitSeb/box64/blob/c6e981a36369b560012f22f29b69e8e8843c072b/tests/bash -O /usr/local/bin/box64-bash
+#sudo wget https://raw.githubusercontent.com/ptitSeb/box64/tests/bash -O /usr/local/bin/box64-bash
+sudo wget https://github.com/ptitSeb/box64/blob/c6e981a36369b560012f22f29b69e8e8843c072b/tests/bash -O /usr/local/bin/box64-bash
 
 # use to fix not having binfmt, which we have working (WIP, need move box64_bash)
 sudo chmod +x /usr/local/bin/box64-bash
