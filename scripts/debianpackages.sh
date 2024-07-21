@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#DEPRICATED, no long used
+#DEPRICATED, no longer used
 
 #debianpackages.sh
 #Part 6 - Debian User - Installing lots of packages
