@@ -1,4 +1,7 @@
 #!/bin/bash
+
+#DEPRICATED, no long used
+
 #Part 4 - Debian - Adding Custom User (Disabled)
 #addcustomuser.sh
 # direct copy of cheadrian - Addons_Proot_Add_user.sh
