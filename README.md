@@ -33,7 +33,7 @@ now su gamer and enter user mode
 ```bash
 curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/part4.sh && . ~/part4.sh 1
 ```
-lastly sorry there a few bugs and fixes that are in the script but never apply. Frist is passwd root, the rest commands are in part4 and mostly can just be copied and paste
+lastly sorry there a few bugs and fixes that are in the script but never apply. Frist is passwd root, the rest commands are in part4 and mostly can just be copied and paste.
 Commands below are for testing.
 ```bash
   update-binfmts --display
@@ -44,6 +44,9 @@ Commands below are for testing.
 ```bash
   ulimit -Hn
 ```
+This fix can only be run after starting xfce4
+#Edit your ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml file and change: vblank_mode from auto to off.
+
 Last shm is super important and everytime i login chroot i have to remake it and relog.
 ```bash
   cd /dev/ && mkdir shm && chmod 777 shm && exit
