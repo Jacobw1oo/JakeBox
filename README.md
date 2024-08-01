@@ -7,10 +7,10 @@ Installation instructions
 [Termux](https://f-droid.org/repo/com.termux_118.apk),
 [Termux-X11](https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/components/termux-x11.apk)
 
-2. Open termux and paste command
+2. (WIP) Open termux and paste command (dont have a loader built yet)
 
 ```bash
-curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/jakebox.sh && . ~/jakebox.sh 1
+curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/part1.sh && . ~/part1.sh 1
 ```
 
 3. (WIP) Type `jakebox` in termux or `jakeboxsys` if you need want terminal.
