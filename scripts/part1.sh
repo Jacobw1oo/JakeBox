@@ -1,6 +1,8 @@
 #!/data/data/com.termux/files/usr/bin/bash
 set +o histexpand
 
+#have to chmod +x part1.sh and chmod 755 part1.sh
+
 # Setup termux
 echo "allow-external-apps = true" >> ~/.termux/termux.properties
 echo "hide-soft-keyboard-on-startup = true" >> ~/.termux/termux.properties
@@ -8,8 +10,14 @@ echo "hide-soft-keyboard-on-startup = true" >> ~/.termux/termux.properties
 pkg clean && termux-setup-storage && yes | pkg update &&
 pkg install -y tsu nano wget pulseaudio && pkg clean || exit
 
-echo 'alias jakebox-terminal="./terminal.sh"
-alias jakebox="./start.sh"' > ~/.bashrc
+#install x11 interface
+pkg install x11-repo
+pkg install termux-x11-nightly
+
+echo 'alias jakeboxsys="./startterminal.sh"
+alias jakebox="./start.sh"' >> ~/.bashrc
+
+#echo 'pulseaudio --verbose --start --exit-idle-time=-1 --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1"'>> ~/.bashrc
 
 # Setup environment variables
 CHROOT="./ubuntu"
@@ -27,4 +35,3 @@ sudo tar -xpf ${CHROOT}/*.tar.gz --directory ${CHROOT}
 sudo rm ${CHROOT}/*.tar.gz
 
 #wget --directory-prefix ${CHROOT} part2.sh
-
