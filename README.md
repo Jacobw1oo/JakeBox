@@ -13,7 +13,7 @@ Installation instructions
 curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/jakebox.sh && . ~/jakebox.sh 1
 ```
 
-3. Type `jakebox` in termux or `jakeboxsys` if you need "--no-sysvipc".
+3. (WIP) Type `jakebox` in termux or `jakeboxsys` if you need want terminal.
 
 #
 Massive Thanks to [ptitSeb](https://github.com/ptitSeb/box86), without box86 & box64 non of this would be possible.
