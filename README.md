@@ -10,10 +10,43 @@ Installation instructions
 2. (WIP) Open termux and paste command (dont have a loader built yet)
 
 ```bash
-curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/part1.sh && . ~/part1.sh 1
+curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/part1.sh && . ~/part1.sh 1
 ```
 
 3. (WIP) Type `jakebox` in termux or `jakeboxsys` if you need want terminal.
+
+Manual installation, start at termux
+```bash
+curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/part1.sh && . ~/part1.sh 1
+```
+```bash
+curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/terminalstart.sh
+```
+Once complete run terminalstart.sh to enter the chroot
+```bash
+curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/part2.sh && . ~/part2.sh 1
+```
+```bash
+curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/part3.sh && . ~/part3.sh 1
+```
+now su gamer and enter user mode
+```bash
+curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/part4.sh && . ~/part4.sh 1
+```
+lastly sorry there a few bugs and fixes that are in the script but never apply. Frist is passwd root, the rest commands are in part4 and mostly can just be copied and paste
+```bash
+  update-binfmts --display
+```
+```bash
+  cat /etc/environment
+```
+```bash
+  ulimit -Hn
+```
+Last shm is super important and everytime i login chroot i have to remake it and relog.
+```bash
+  cd /dev/ && mkdir shm && chmod 777 shm && exit
+```
 
 #
 Massive Thanks to [ptitSeb](https://github.com/ptitSeb/box86), without box86 & box64 non of this would be possible.
