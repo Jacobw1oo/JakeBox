@@ -34,6 +34,7 @@ now su gamer and enter user mode
 curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/scripts/part4.sh && . ~/part4.sh 1
 ```
 lastly sorry there a few bugs and fixes that are in the script but never apply. Frist is passwd root, the rest commands are in part4 and mostly can just be copied and paste
+Commands below are for testing.
 ```bash
   update-binfmts --display
 ```
