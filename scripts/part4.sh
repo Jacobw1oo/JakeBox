@@ -190,7 +190,38 @@ sudo flatpak --arch=x86_64 install launcher.flatpakref
 sudo nano /etc/pulse/client.conf
 # i changed shm to no
 
-#start part6
+#Fixing controllers
+  sudo apt-get install xserver-xorg-input-joystick joystick antimicro
+
+  sudo groupadd -g 1004 input
+  sudo usermod -a -G input root
+  sudo usermod -a -G input gamer
+
+  #opps, just going to sneak this one in
+  sudo usermod -a -G aid_inet gamer
+
+  # does not  work just used. getfacl /dev/input/event* to find group id and then made input group match it.
+
+  sudo echo 'KERNEL=="event*", GROUP=="input", OWNER="gamer"' > /lib/udev/rules.d/99-input.rules
+  #one of these or neither
+  #sudo echo 'KERNEL=="event*", Name="input/%k", MODE="660", GROUP=="input" OWNER="gamer"' > /lib/udev/rules.d/99-input.rules
+
+  #sudo echo 'KERNEL=="event*", Name="input/%k", MODE="660", GROUP="input"' > /lib/udev/rules.d/99-input.rules
+  #sudo echo 'KERNEL=="event*", SUBSYSTEM=="input", MODE="660", GROUP="input", OWNER="gamer", RUN+="sudo chmod 7S55 /dev/input/event11"' > /lib/udev/rules.d/99-input.rules
+
+  #tmp fix
+  #sudo chmod 755 /dev/input/event11
+  #testing
+  #sudo evtest
+  #ls -al /dev/input/
+  #getfacl /dev/input/event*
+
+# Adding new / more wine
+#cd ~/.local/share/lutris/runners/wine/
+#wget wine-9-4.whatever
+#tar -help
+
+  #start part6
 
 #later fixing for Graphics
 sudo echo "MESA_LOADER_DRIVER_OVERRIDE=zink" >> /etc/environment
@@ -205,3 +236,4 @@ sudo echo "TU_DEBUG=noconform" >> /etc/environment
 
   #can only be run after start xfce4
   #Edit your ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml file and change: vblank_mode from auto to off.
+
