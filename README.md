@@ -1,5 +1,5 @@
 # JakeBox
-Repo for quickly setuping up Proot with Termux, and installing GPU acceleration, Box64/86, Wine, Firefox-esr, Steam, Heroic, Lutris, PlayonLinux. 
+Repo for quickly setuping up Chroot with Termux, and installing GPU acceleration, Box64/86, Wine, Firefox-esr, Steam, Heroic, Lutris, PlayonLinux. 
 
 Installation instructions
 
