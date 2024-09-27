@@ -20,7 +20,7 @@ Manual installation, start at termux
 curl -s -o ~/part1.sh https://raw.githubusercontent.com/Jacobw1oo//JakeBox/main/scripts/part1.sh && . ~/part1.sh 1
 ```
 ```bash
-curl -s -o ~/terminalstart.sh https://raw.githubusercontent.com/Jacobw1oo//JakeBox/main/scripts/terminalstart.sh
+curl -s -o ~/terminalstart.sh https://raw.githubusercontent.com/Jacobw1oo//JakeBox/main/scripts/terminalstart.sh && chmod +x terminalstart.sh
 ```
 Once complete run terminalstart.sh to enter the chroot
 ```bash
