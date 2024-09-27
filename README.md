@@ -22,11 +22,11 @@ curl -s -o ~/terminalstart.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBo
 ```bash
 curl -s -o ~/part1.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/scripts/part1.sh && chmod +x ~/part1.sh && . ~/part1.sh 
 ```
-
+Now we have to download the network & apt fixing into the chroot
 ```bash
 curl -s -o ~/ubuntu/root/part2.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/scripts/part2.sh
 ```
-Once complete run terminalstart.sh to enter the chroot
+Once completed run terminalstart.sh to enter the chroot, then run part2
 ```bash
 bash ~/root/part2.sh 
 ```
