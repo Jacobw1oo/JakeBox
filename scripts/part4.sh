@@ -92,21 +92,24 @@ package box86
 interpreter /usr/local/bin/box86
 magic \x7fELF\x01\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x03\x00
 mask \xff\xff\xff\xff\xff\xff\xff\x00\xff\xff\xff\xff\xff\xff\xff\xff\xfe\xff\xff\xff
-" >  /usr/share/binfmts/box86.conf
+" >  ~/box86.conf
 
 sudo echo "
 package box64
 interpreter /usr/local/bin/box64
 magic \x7fELF\x02\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x02\x00\x3e\x00
 mask \xff\xff\xff\xff\xff\xff\xff\x00\xff\xff\xff\xff\xff\xff\xff\xff\xfe\xff\xff\xff
-" >  /usr/share/binfmts/box64.conf
+" >  ~/box64.conf
 
 sudo echo "
 package box64
 interpreter /usr/local/bin/box64
 extension AppImage
-" >  /usr/share/binfmts/box64_appimage.conf
+" >  ~/box64_appimage.conf
 
+sudo mv ~/box86.conf /usr/share/binfmts/box86.conf
+sudo mv ~/box64.conf /usr/share/binfmts/box64.conf
+sudo mv ~/box64_appimage.conf /usr/share/binfmts/box64_appimage.conf
 sudo update-binfmts --import box86.conf
 sudo update-binfmts --import box64.conf
 sudo update-binfmts --import box64_appimage.conf
@@ -230,6 +233,13 @@ sudo nano /etc/pulse/client.conf
 sudo echo "MESA_LOADER_DRIVER_OVERRIDE=zink" >> /etc/environment
 sudo echo "VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/freedreno_icd.aarch64.json:/usr/share/vulkan/icd.d/freedreno_icd.armv7l.json" >> /etc/environment
 sudo echo "TU_DEBUG=noconform" >> /etc/environment
+
+echo " Stuff i always have to fix 
+update-binfmts --display
+passwd root
+cat /etc/environment
+ulimit -Hn
+99-input.rules "
 
 #crap i always all have to manually fix
   #update-binfmts --display
