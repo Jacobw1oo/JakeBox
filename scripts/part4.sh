@@ -235,7 +235,6 @@ sudo echo "VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/freedreno_icd.aarch64.json:/
 sudo echo "TU_DEBUG=noconform" >> /etc/environment
 
 echo " Stuff i always have to fix 
-update-binfmts --display
 passwd root
 cat /etc/environment
 ulimit -Hn
