@@ -21,7 +21,8 @@ alias jakebox="./start.sh"' >> ~/.bashrc
 
 # Setup environment variables
 CHROOT="./ubuntu"
-ROOTFS="https://cdimage.ubuntu.com/ubuntu-base/releases/24.04/release/ubuntu-base-24.04-base-arm64.tar.gz"
+# old na version "https://cdimage.ubuntu.com/ubuntu-base/releases/24.04/release/ubuntu-base-24.04-base-arm64.tar.gz, it update is https://cdimage.ubuntu.com/ubuntu-base/releases/24.04/release/ubuntu-base-24.04.1-base-arm64.tar.gz"
+ROOTFS="https://cdimage.ubuntu.com/ubuntu-base/releases/24.10/beta/ubuntu-base-24.10-beta-base-arm64.tar.gz"
 TMPDIR="/data/data/com.termux/files/usr/tmp"
 
 sudo mkdir ${CHROOT}
