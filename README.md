@@ -17,10 +17,10 @@ curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main
 
 Manual installation, start at termux
 ```bash
-curl -s -o ~/part1.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/scripts/part1.sh && chmod +x ~/part1.sh && . ~/part1.sh 
+curl -s -o ~/terminalstart.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/scripts/terminalstart.sh && chmod +x terminalstart.sh
 ```
 ```bash
-curl -s -o ~/terminalstart.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/scripts/terminalstart.sh && chmod +x terminalstart.sh
+curl -s -o ~/part1.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/scripts/part1.sh && chmod +x ~/part1.sh && . ~/part1.sh 
 ```
 Once complete run terminalstart.sh to enter the chroot
 ```bash
