@@ -236,6 +236,7 @@ sudo echo "TU_DEBUG=noconform" >> /etc/environment
   #passwd root
   #cat /etc/environment
   #ulimit -Hn
+  #99-input.rules
 
   #can only be run after start xfce4
   #Edit your ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml file and change: vblank_mode from auto to off.
