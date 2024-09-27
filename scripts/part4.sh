@@ -172,7 +172,7 @@ sudo apt-get install notify-osd
 #running Rare Appimage
 
 #installing deps for assault cube
-sudo apt-get install libsdl1.2-compat libsdl-image1.2
+sudo apt-get install libsdl1.2-compat libsdl-image1.2 -y
 
 #installing toontown
 cd ~/Downloads
