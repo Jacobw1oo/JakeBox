@@ -22,12 +22,13 @@ curl -s -o ~/terminalstart.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBo
 ```bash
 curl -s -o ~/part1.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/scripts/part1.sh && chmod +x ~/part1.sh && . ~/part1.sh 
 ```
+
+```bash
+curl -s -o ~/ubuntu/root/part2.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/scripts/part2.sh
+```
 Once complete run terminalstart.sh to enter the chroot
 ```bash
-apt update && apt install curl
-```
-```bash
-curl -s -o ~/part2.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/scripts/part2.sh && bash ~/part2.sh 
+bash ~/root/part2.sh 
 ```
 ```bash
 curl -s -o ~/part3.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/scripts/part3.sh && bash ~/part3.sh 
