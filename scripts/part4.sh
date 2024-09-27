@@ -206,6 +206,9 @@ sudo nano /etc/pulse/client.conf
   #one of these or neither
   #sudo echo 'KERNEL=="event*", Name="input/%k", MODE="660", GROUP=="input" OWNER="gamer"' > /lib/udev/rules.d/99-input.rules
 
+  #was
+  #sudo echo 'KERNEL=="event*", Name="input/%k", MODE="660", GROUP=="input", OWNER="gamer"' > /lib/udev/rules.d/99-input.rules
+
   #sudo echo 'KERNEL=="event*", Name="input/%k", MODE="660", GROUP="input"' > /lib/udev/rules.d/99-input.rules
   #sudo echo 'KERNEL=="event*", SUBSYSTEM=="input", MODE="660", GROUP="input", OWNER="gamer", RUN+="sudo chmod 7S55 /dev/input/event11"' > /lib/udev/rules.d/99-input.rules
 
@@ -236,4 +239,3 @@ sudo echo "TU_DEBUG=noconform" >> /etc/environment
 
   #can only be run after start xfce4
   #Edit your ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml file and change: vblank_mode from auto to off.
-
