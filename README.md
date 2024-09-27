@@ -17,21 +17,21 @@ curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo//JakeBox/mai
 
 Manual installation, start at termux
 ```bash
-curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo//JakeBox/main/scripts/part1.sh && . ~/part1.sh 1
+curl -s -o ~/part1.sh https://raw.githubusercontent.com/Jacobw1oo//JakeBox/main/scripts/part1.sh && . ~/part1.sh 1
 ```
 ```bash
-curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo//JakeBox/main/scripts/terminalstart.sh
+curl -s -o ~/terminalstart.sh https://raw.githubusercontent.com/Jacobw1oo//JakeBox/main/scripts/terminalstart.sh
 ```
 Once complete run terminalstart.sh to enter the chroot
 ```bash
-curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo//JakeBox/main/scripts/part2.sh && . ~/part2.sh 1
+curl -s -o ~/part2.sh https://raw.githubusercontent.com/Jacobw1oo//JakeBox/main/scripts/part2.sh && . ~/part2.sh 1
 ```
 ```bash
-curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo//JakeBox/main/scripts/part3.sh && . ~/part3.sh 1
+curl -s -o ~/part3.sh https://raw.githubusercontent.com/Jacobw1oo//JakeBox/main/scripts/part3.sh && . ~/part3.sh 1
 ```
 now su gamer and enter user mode
 ```bash
-curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo//JakeBox/main/scripts/part4.sh && . ~/part4.sh 1
+curl -s -o ~/part4.sh https://raw.githubusercontent.com/Jacobw1oo//JakeBox/main/scripts/part4.sh && . ~/part4.sh 1
 ```
 lastly sorry there a few bugs and fixes that are in the script but never apply. Frist is passwd root, the rest commands are in part4 and mostly can just be copied and paste.
 Commands below are for testing.
