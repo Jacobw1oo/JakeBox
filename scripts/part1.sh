@@ -7,6 +7,9 @@ set +o histexpand
 echo "allow-external-apps = true" >> ~/.termux/termux.properties
 echo "hide-soft-keyboard-on-startup = true" >> ~/.termux/termux.properties
 
+#baseline repo and remove issues
+termux-change-repo
+
 pkg clean && termux-setup-storage && yes | pkg update &&
 pkg install -y tsu nano wget pulseaudio && pkg clean || exit
 
