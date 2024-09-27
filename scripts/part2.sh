@@ -27,3 +27,4 @@ add-apt-repository ppa:mastag/mesa-turnip-kgsl
 dpkg --add-architecture armhf # enable installation of armhf libraries
 apt update
 apt upgrade
+apt install curl -y
