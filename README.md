@@ -27,7 +27,6 @@ Once complete run terminalstart.sh to enter the chroot
 apt update && apt install curl
 ```
 ```bash
-```bash
 curl -s -o ~/part2.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/scripts/part2.sh && bash ~/part2.sh 
 ```
 ```bash
