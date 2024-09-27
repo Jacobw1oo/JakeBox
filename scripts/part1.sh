@@ -35,3 +35,4 @@ sudo tar -xpf ${CHROOT}/*.tar.gz --directory ${CHROOT}
 sudo rm ${CHROOT}/*.tar.gz
 
 #wget --directory-prefix ${CHROOT} part2.sh
+
