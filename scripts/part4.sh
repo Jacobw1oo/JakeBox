@@ -178,10 +178,10 @@ sudo apt-get install notify-osd
 sudo apt-get install libsdl1.2-compat libsdl-image1.2 -y
 
 #installing toontown
-cd ~/Downloads
-wget https://cdn.toontownrewritten.com/launcher/linux/launcher.flatpakref
+#cd ~/Downloads
+#wget https://cdn.toontownrewritten.com/launcher/linux/launcher.flatpakref
 #Installing flatpak for amd64 not (AArch64)
-sudo flatpak --arch=x86_64 install launcher.flatpakref
+#sudo flatpak --arch=x86_64 install launcher.flatpakref
 
 #fixing controllers
 #have to install input bridge
