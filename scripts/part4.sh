@@ -241,6 +241,7 @@ ulimit -Hn
 99-input.rules "
 
 echo " Dont forget afte running xfce4 for the frist time to Edit your ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml file and change: vblank_mode from auto to off."
+remember to turn off session lock on the screen saver setting app.
 #crap i always all have to manually fix
   #update-binfmts --display
   #passwd root
