@@ -23,7 +23,7 @@ curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main
   mkdir /dev/shm && chmod 755 /dev/shm && exit
 ```
 
-For Manual Installation LongInstall.md
+For Manual Installation use [LongInstall.md]([https://github.com/ptitSeb/box86](https://github.com/Jacobw1oo/JakeBox/blob/main/LongInstall.md)
 
 Massive Thanks to [ptitSeb](https://github.com/ptitSeb/box86), without box86 & box64 non of this would be possible.
 
