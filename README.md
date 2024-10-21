@@ -15,7 +15,7 @@ curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main
 
 3. (WIP) Type `jakebox` in termux or `jakeboxsys` if you need want terminal.
 
-4. Last shm is super important and everytime i login chroot i have to remake it and relog.
+4. Last shm is super important and everytime i login chroot i have to remake it and relogin.
 ```bash
   mkdir /dev/shm && chmod 755 /dev/shm && exit
 ```
