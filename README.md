@@ -7,7 +7,7 @@ Installation instructions
 [Termux](https://f-droid.org/repo/com.termux_118.apk),
 [Termux-X11](https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/components/termux-x11.apk)
 
-2. (WIP) Open termux and paste command (dont have a loader built yet)
+2. (WIP) Open termux and paste command (getting Image upload and need download and extract command)
 
 ```bash
 curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/scripts/part1.sh && chmod +x ~/part1.sh && . ~/part1.sh 
