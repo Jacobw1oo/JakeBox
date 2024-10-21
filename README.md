@@ -13,9 +13,10 @@ Installation instructions
 curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/scripts/part1.sh && chmod +x ~/part1.sh && . ~/part1.sh 
 ```
 
-3. (WIP) Type `jakebox` in termux or `jakeboxsys` if you need want terminal.
+3. (WIP) Type `jakebox` in termux or
+3. `./` if you need want terminal.
 
-4. Last shm is super important and everytime i login chroot i have to remake it and relogin.
+5. Last shm is super important and everytime i login chroot i have to remake it and relogin.
 ```bash
   mkdir /dev/shm && chmod 755 /dev/shm && exit
 ```
