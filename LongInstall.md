@@ -1,4 +1,4 @@
-Manual installation, start at termux
+Manual installation, starting at termux
 ```bash
 curl -s -o ~/terminalstart.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/scripts/terminalstart.sh && chmod +x terminalstart.sh
 ```
