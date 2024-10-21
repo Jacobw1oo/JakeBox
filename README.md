@@ -14,9 +14,10 @@ curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main
 ```
 
 3. (WIP) Type `jakebox` in termux or
-3. `./` if you need want terminal.
+3. `./terminalstart.sh` if you need want terminal.
+4. Work thought the check list, 1. Check shm, 2. su gamer && cd ~ 3. ./jakebox
 
-5. Last shm is super important and everytime i login chroot i have to remake it and relogin.
+5. shm is super important and everytime i login chroot i have to remake it and relogin.
 ```bash
   mkdir /dev/shm && chmod 755 /dev/shm && exit
 ```
