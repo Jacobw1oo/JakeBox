@@ -13,7 +13,7 @@ Installation instructions
 curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/scripts/part1.sh && chmod +x ~/part1.sh && . ~/part1.sh 
 ```
 
-3. (WIP) Type `jakebox` in termux or
+3. (WIP) Type `jakebox` in termux to login and start X11 or
   
 3. `./terminalstart.sh` if you need want terminal.
 3. Work thought the check list, 1. Check shm, 2. su gamer && cd ~ 3. ./jakebox
