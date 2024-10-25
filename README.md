@@ -11,8 +11,15 @@ Installation instructions
 
 ```bash
 wget https://github.com/Jacobw1oo/JakeBox/releases/download/ubuntu24-10_2024-10-08/ubuntu24-10_2024-10-08_00
+```
+```bash
 wget https://github.com/Jacobw1oo/JakeBox/releases/download/ubuntu24-10_2024-10-08/ubuntu24-10_2024-10-08_01
+```
+```bash
 cat ubuntu24-10_2024-10-08* | tar xzpvf -
+```
+```bash
+curl -s -o ~/terminalstart.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/scripts/terminalstart.sh
 ```
 
 3. (WIP) Type `jakebox` in termux to login and start X11 or
