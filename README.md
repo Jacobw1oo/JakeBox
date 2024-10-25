@@ -7,10 +7,12 @@ Installation instructions
 [Termux](https://f-droid.org/repo/com.termux_118.apk),
 [Termux-X11](https://raw.githubusercontent.com/Jacobw1oo/jakebox/main/components/termux-x11.apk)
 
-2. (WIP) Open termux and paste command (getting Image upload and need download and extract command)
+2. Open termux and paste command to downlaod and extract.
 
 ```bash
-curl -s -o ~/jakebox.sh https://raw.githubusercontent.com/Jacobw1oo/JakeBox/main/scripts/part1.sh && chmod +x ~/part1.sh && . ~/part1.sh 
+wget https://github.com/Jacobw1oo/JakeBox/releases/download/ubuntu24-10_2024-10-08/ubuntu24-10_2024-10-08_00
+wget https://github.com/Jacobw1oo/JakeBox/releases/download/ubuntu24-10_2024-10-08/ubuntu24-10_2024-10-08_01
+cat ubuntu24-10_2024-10-08* | tar xzpvf -
 ```
 
 3. (WIP) Type `jakebox` in termux to login and start X11 or
